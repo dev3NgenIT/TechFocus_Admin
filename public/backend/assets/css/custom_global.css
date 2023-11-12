@@ -1,0 +1,117 @@
+th {
+  color: #0000;
+}
+.table_header_bg,
+.modal-header {
+  background: #24729736;
+  border-radius: 0px;
+}
+tr td {
+  padding: 10px !important;
+}
+.page-link {
+  border-radius: 0% !important;
+}
+.page-item:hover:not(.offset) .page-link {
+  color: #ffffff;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #7239ea !important;
+  border-color: transparent;
+}
+.dataTables_length select {
+  border-radius: 0px;
+  border: 1px solid #eee !important;
+}
+.custom-badge {
+  position: relative;
+  top: -10px;
+  border-radius: 0px;
+  left: 10px;
+  width: 40px;
+}
+.table_title {
+  display: flex;
+  justify-content: center;
+}
+.modal_body_badge {
+  margin-top: -15px;
+}
+
+.stepper-nav {
+  background-color: #124266;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.stepper-title {
+  color: white !important;
+}
+
+/* Step Current title */
+.stepper.stepper-pills .stepper-item.current .stepper-label .stepper-title {
+  color: #959599 !important;
+}
+/* Step Current Icon */
+.stepper.stepper-pills .stepper-item.current .stepper-icon {
+  transition: color 0.2s ease, 
+  background-color 0.2s ease;
+  background-color: #009ef7;
+}
+/* Step Current */
+.stepper.stepper-pills .stepper-item.current .stepper-icon {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  background-color: #2e5b7c;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+  border-radius: 50% !important;
+}
+/* Step Complete Line */
+.stepper.stepper-pills .stepper-item.completed .stepper-icon,
+.stepper.stepper-pills .stepper-item.current:last-child .stepper-icon {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  background-color: #ffff;
+  color: #009ef7;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+  border-radius: 50% !important;
+}
+/* Step Complete Line */
+.stepper.stepper-pills .stepper-item.completed .stepper-icon .stepper-check,
+.stepper.stepper-pills
+  .stepper-item.current:last-child
+  .stepper-icon
+  .stepper-check {
+  color: white;
+}
+/* Step icon */
+.stepper.stepper-pills.stepper-column .stepper-icon {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  background-color: #ffffff;
+  border-radius: 50% !important;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+}
+.step-counter {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.header-fixed.toolbar-fixed .wrapper {
+  padding-top: calc(30px + var(--kt-toolbar-height)) !important;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .table_search_box,
+  .table_title,
+  .table_search_box {
+    display: flex;
+    justify-content: center;
+  }
+  .table_search_box {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+}
