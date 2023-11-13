@@ -14,8 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('policy_acknowledgments', function (Blueprint $table) {
-            $table->id();
             $table->foreignId('country_id')->nullable()->constrained('countries')->cascadeOnDelete();
+            $table->foreignId('employee_id')->nullable()->constrained('admins')->cascadeOnDelete();
+            $table->foreignId('policy_id')->nullable()->constrained('hr_policies')->cascadeOnDelete();
+            $table->string('sign')->nullable()->comment('file.It will automatically come from employee form.No need to add another image to database,just add the image name.');
+            $table->enum('status', ['acknowledged', 'pending'])->default('pending');
+            $table->timestamp('acknowledged_at')->nullable();
             $table->timestamps();
         });
     }

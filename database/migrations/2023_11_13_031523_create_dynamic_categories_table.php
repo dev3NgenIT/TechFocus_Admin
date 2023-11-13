@@ -14,8 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('dynamic_categories', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('country_id')->nullable()->constrained('countries')->cascadeOnDelete();
+            $table->foreignId('company_id')->nullable()->constrained('companies')->cascadeOnDelete();
+            $table->foreignId('parent_id')->nullable()->constrained('dynamic_categories')->cascadeOnDelete();
+            $table->string('name');
+            $table->string('slug')->unique();
+            $table->string('type');
+            $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });
     }

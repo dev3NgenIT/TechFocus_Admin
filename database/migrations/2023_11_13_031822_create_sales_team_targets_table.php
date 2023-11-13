@@ -14,8 +14,17 @@ return new class extends Migration
     public function up()
     {
         Schema::create('sales_team_targets', function (Blueprint $table) {
-            $table->id();
+            $table->foreignId('sales_man_id')->nullable()->constrained('admins')->cascadeOnDelete();
             $table->foreignId('country_id')->nullable()->constrained('countries')->cascadeOnDelete();
+            $table->foreignId('company_id')->nullable()->constrained('companies')->cascadeOnDelete();
+            $table->string('name')->nullable();
+            $table->year('fiscal_year')->nullable();
+            $table->double('year_target')->nullable();
+            $table->double('quarter_one_target')->nullable();
+            $table->double('quarter_two_target')->nullable();
+            $table->double('quarter_three_target')->nullable();
+            $table->double('quarter_four_target')->nullable();
+            $table->enum('year_started', ['january', 'july'])->nullable();
             $table->timestamps();
         });
     }

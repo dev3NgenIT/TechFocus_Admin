@@ -14,8 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('f_a_q_s', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('country_id')->nullable()->constrained('countries')->cascadeOnDelete();
+            $table->foreignId('company_id')->nullable()->constrained('companies')->cascadeOnDelete();
+            $table->foreignId('dynamic_category_id')->nullable()->constrained('dynamic_categories')->cascadeOnDelete();
+            $table->string('question');
+            $table->text('answer');
+            $table->integer('order')->unsigned()->nullable();
+            $table->enum('is_published', ['0', '1'])->default(0);
             $table->timestamps();
         });
     }
