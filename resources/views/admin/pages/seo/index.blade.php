@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-center text-sm-center">
                                     <div class="card-title table_title">
-                                        <h2 class="text-center">Category</h2>
+                                        <h2 class="text-center">SEO</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-end text-sm-center">
@@ -46,7 +46,7 @@
                                     </button>
                                     <button type="button" class="btn btn-sm btn-light-success rounded-0"
                                         data-kt-menu-placement="bottom-end" data-bs-toggle="modal"
-                                        data-bs-target="#categoryAddModal">
+                                        data-bs-target="#seoAddModal">
                                         Add New
                                     </button>
                                     <!--begin::Menu-->
@@ -96,11 +96,10 @@
                                 <!--begin::Table row-->
                                 <tr class="text-center text-gray-900 fw-bolder fs-7 text-uppercase">
                                     <th class="" width="5%">Sl</th>
-                                    <th class="" width="10%">Logo</th>
-                                    <th class="" width="25%">Country Name</th>
-                                    <th class="" width="30%">Parent Name</th>
-                                    <th class="" width="10%">Name</th>
-                                    <th class="" width="10%">Image</th>
+                                    <th class="" width="20%">Page Name</th>
+                                    <th class="" width="25%">Meta Title</th>
+                                    <th class="" width="20%">Page Link</th>
+                                    <th class="" width="20%">Google Verification Code</th>
                                     <th class="text-center" width="10%">Action</th>
                                     <!--end::Table row-->
                             </thead>
@@ -110,31 +109,25 @@
                                         1
                                     </td>
                                     <td>
-                                        <img class="img-fluid rounded-circle" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        Home Page
                                     </td>
-                                    <td>Company
+                                    <td>Tech Foucs Leading Page
                                     </td>
-                                    <td>Company
-                                    </td>
-                                    <td>Company
+                                    <td>https://demopage.com
                                     </td>
                                     <td>
-                                        <img class="img-fluid" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        #adsad5684698
                                     </td>
                                     <td class="d-flex justify-content-between align-items-center">
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
-                                            data-bs-toggle="modal" data-bs-target="#categoryViewModal">
+                                            data-bs-toggle="modal" data-bs-target="#seoViewModal">
                                             <i class="fa-solid fa-expand"></i>
                                             <!--View-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
-                                            data-bs-toggle="modal" data-bs-target="#categorymentEditModal">
+                                            data-bs-toggle="modal" data-bs-target="#seoEditModal">
                                             <i class="fa-solid fa-pen"></i>
                                             <!--Edit-->
                                         </a>
@@ -148,34 +141,28 @@
                                 </tr>
                                 <tr class="Even">
                                     <td>
-                                        1
+                                        2
                                     </td>
                                     <td>
-                                        <img class="img-fluid rounded-circle" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        Main Page
                                     </td>
-                                    <td>Company
+                                    <td>Tech Foucs Leading Page
                                     </td>
-                                    <td>Company
-                                    </td>
-                                    <td>Company
+                                    <td>https://demopage.com
                                     </td>
                                     <td>
-                                        <img class="img-fluid" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        #adsad5684698
                                     </td>
                                     <td class="d-flex justify-content-between align-items-center">
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
-                                            data-bs-toggle="modal" data-bs-target="#categoryViewModal">
+                                            data-bs-toggle="modal" data-bs-target="#seoViewModal">
                                             <i class="fa-solid fa-expand"></i>
                                             <!--View-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
-                                            data-bs-toggle="modal" data-bs-target="#categorymentEditModal">
+                                            data-bs-toggle="modal" data-bs-target="#SeoEditModal">
                                             <i class="fa-solid fa-pen"></i>
                                             <!--Edit-->
                                         </a>
@@ -195,11 +182,11 @@
         </div>
     </div>
     {{-- Add Modal --}}
-    <div class="modal fade" id="categoryAddModal" data-backdrop="static">
+    <div class="modal fade" id="seoAddModal" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">Add Category</h5>
+                    <h5 class="modal-title">Add SEO</h5>
                     <!-- Close button in the header -->
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
@@ -218,7 +205,7 @@
                                             <label for="validationCustom04" class="form-label required">Country
                                                 Name</label>
                                             <select class="form-select form-select-solid" name="country_id"
-                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
+                                                data-dropdown-parent="#seoAddModal" data-control="select2"
                                                 data-placeholder="Select an option" data-allow-clear="true" required>
                                                 <option></option>
                                                 <option value="1">Bangaldesh</option>
@@ -230,64 +217,72 @@
                                         </div>
 
                                         <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Name
+                                            <label for="validationCustom01" class="form-label required ">Page Name
                                             </label>
                                             <input type="text" class="form-control form-control-solid form-control-sm"
-                                                name="name" id="validationCustom01" placeholder="Enter Name" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Name </div>
+                                                name="page_name" id="validationCustom01" placeholder="e.g : Home Page" required>
+                                            <div class="invalid-feedback"> Please Page Name </div>
                                         </div>
 
                                         <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Image
+                                            <label for="validationCustom01" class="form-label required ">Page Link
                                             </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="image" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
+                                            <input type="url" class="form-control form-control-solid form-control-sm"
+                                                name="page_link" id="validationCustom01" placeholder="e.g: http://demo.com" required>
                                             <div class="invalid-feedback"> Please Enter Image </div>
                                         </div>
 
                                         <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Logo
+                                            <label for="validationCustom01" class="form-label required ">Meta Title
                                             </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="logo" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Logo </div>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                name="meta_title" id="validationCustom01" placeholder="e.g: Your Meta Title" required>
+                                            <div class="invalid-feedback"> Please Enter Meta Title </div>
                                         </div>
-
                                         <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label">
+                                            <label for="validationCustom01" class="form-label required ">Meta Keyword
                                             </label>
-                                            <div
-                                                class="form-check form-check-custom form-check-warning form-check-solid form-check-sm mt-3 ms-4">
-                                                <input class="form-check-input bg-primary" name="is_parent"
-                                                    value="1" type="checkbox" id="flexRadioLg" />
-                                                <label class="form-check-label" for="flexRadioLg">Is Parent</label>
-                                            </div>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                name="meta_keywords" id="validationCustom01" placeholder="e.g: Meta Keywords" required>
+                                            <div class="invalid-feedback"> Please Enter Meta Keywords </div>
                                         </div>
-
-                                        <div class="col-md-6 mb-1 hide_parent_input" id="parentInputContainer">
-                                            <label for="validationCustom01" class="form-label required">Parent
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="parent_id"
-                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
-                                                data-placeholder="Select an Parent" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom01" class="form-label">Meta Keyword</label>
+                                            <select class="form-select form-select-solid" data-control="select2" data-placeholder="Select an option" 
+                                            data-allow-clear="true" multiple="multiple" name="meta_keywords" required>
+                                            <option></option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
                                             </select>
-                                            <div class="valid-feedback">Looks good!</div>
-                                            <div class="invalid-feedback">Please Select Parent Name</div>
+                                            <div class="invalid-feedback"> Please provide a valid zip. </div>
                                         </div>
-
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <label for="validationCustom010"
-                                                class="form-label required">Description</label>
-                                            <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
-                                                placeholder="Enter Description" required></textarea>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter description</div>
+                                                class="form-label required">Meta Description</label>
+                                            <textarea rows="1" name="meta_description" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Meta Description" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Meta Description</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom010"
+                                                class="form-label required">Google Analytics Code</label>
+                                            <textarea rows="1" name="google_analytics_code" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Google Analytics Code" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Google Analytics Code</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom010"
+                                                class="form-label required">google Verification Code</label>
+                                            <textarea rows="1" name="google_verification_code" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Google Verification Code" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Google Verification Code</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom010"
+                                                class="form-label required">Google Adsense Code</label>
+                                            <textarea rows="1" name="google_adsense_code" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Google Adsense Code" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Google Adsense Code</div>
                                         </div>
                                     </div>
                                 </div>
@@ -303,11 +298,11 @@
         </div>
     </div>
     {{-- Edit Modal --}}
-    <div class="modal fade" id="categorymentEditModal" data-backdrop="static">
+    <div class="modal fade" id="seoEditModal" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">Edit Category</h5>
+                    <h5 class="modal-title">Edit seo</h5>
                     <!-- Close button in the header -->
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
@@ -326,73 +321,84 @@
                                             <label for="validationCustom04" class="form-label required">Country
                                                 Name</label>
                                             <select class="form-select form-select-solid" name="country_id"
-                                                data-dropdown-parent="#categorymentEditModal" data-control="select2"
+                                                data-dropdown-parent="#seoEditModal" data-control="select2"
                                                 data-placeholder="Select an option" data-allow-clear="true" required>
                                                 <option></option>
                                                 <option value="1">Bangaldesh</option>
                                                 <option value="2">India</option>
                                                 <option value="2">Pakistan</option>
-                                                <option value="2">Nepal</option>
                                             </select>
                                             <div class="valid-feedback""> Looks good! </div>
                                             <div class="invalid-feedback"> Please Select Country Name. </div>
                                         </div>
+
                                         <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Name
+                                            <label for="validationCustom01" class="form-label required ">Page Name
                                             </label>
                                             <input type="text" class="form-control form-control-solid form-control-sm"
-                                                name="name" id="validationCustom01" placeholder="Enter Name" name="Ngen It" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Name </div>
+                                                name="page_name" id="validationCustom01" placeholder="e.g : Home Page" required>
+                                            <div class="invalid-feedback"> Please Page Name </div>
                                         </div>
+
                                         <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Image
+                                            <label for="validationCustom01" class="form-label required ">Page Link
                                             </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="image" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
+                                            <input type="url" class="form-control form-control-solid form-control-sm"
+                                                name="page_link" id="validationCustom01" placeholder="e.g: http://demo.com" required>
                                             <div class="invalid-feedback"> Please Enter Image </div>
                                         </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Logo
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="logo" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Logo </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label">
-                                            </label>
-                                            <div
-                                                class="form-check form-check-custom form-check-warning form-check-solid form-check-sm mt-3 ms-4">
-                                                <input class="form-check-input bg-primary" name="is_parent"
-                                                    value="1" type="checkbox" id="flexRadioLg" />
-                                                <label class="form-check-label" for="flexRadioLg">Is Parent</label>
-                                            </div>
-                                        </div>
 
-                                        <div class="col-md-6 mb-1 hide_parent_input" id="parentInputContainer">
-                                            <label for="validationCustom01" class="form-label required">Parent
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="parent_id"
-                                                data-dropdown-parent="#categorymentEditModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
+                                        <div class="col-md-6 mb-1">
+                                            <label for="validationCustom01" class="form-label required ">Meta Title
+                                            </label>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                name="meta_title" id="validationCustom01" placeholder="e.g: Your Meta Title" required>
+                                            <div class="invalid-feedback"> Please Enter Meta Title </div>
+                                        </div>
+                                        <div class="col-md-6 mb-1">
+                                            <label for="validationCustom01" class="form-label required ">Meta Keyword
+                                            </label>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                name="meta_keywords" id="validationCustom01" placeholder="e.g: Meta Keywords" required>
+                                            <div class="invalid-feedback"> Please Enter Meta Keywords </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom01" class="form-label">Meta Keyword</label>
+                                            <select class="form-select form-select-solid" data-control="select2" data-placeholder="Select an option" 
+                                            data-allow-clear="true" multiple="multiple" name="meta_keywords" required>
+                                            <option></option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
                                             </select>
-                                            <div class="valid-feedback">Looks good!</div>
-                                            <div class="invalid-feedback">Please Select Parent Name</div>
+                                            <div class="invalid-feedback"> Please provide a valid zip. </div>
                                         </div>
-
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <label for="validationCustom010"
-                                                class="form-label required">Description</label>
-                                            <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
-                                                placeholder="Enter Description" required></textarea>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Description</div>
+                                                class="form-label required">Meta Description</label>
+                                            <textarea rows="1" name="meta_description" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Meta Description" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Meta Description</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom010"
+                                                class="form-label required">Google Analytics Code</label>
+                                            <textarea rows="1" name="google_analytics_code" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Google Analytics Code" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Google Analytics Code</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom010"
+                                                class="form-label required">google Verification Code</label>
+                                            <textarea rows="1" name="google_verification_code" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Google Verification Code" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Google Verification Code</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom010"
+                                                class="form-label required">Google Adsense Code</label>
+                                            <textarea rows="1" name="google_adsense_code" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Google Adsense Code" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Google Adsense Code</div>
                                         </div>
                                     </div>
                                 </div>
@@ -408,7 +414,7 @@
         </div>
     </div>
     {{-- View Modal --}}
-    <div class="modal fade" id="categoryViewModal" data-backdrop="static">
+    <div class="modal fade" id="seoViewModal" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
@@ -427,67 +433,59 @@
                                     <p class="badge badge-info custom-badge">Info</span>
                                     <div class="card-body p-1 px-2">
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-sm-5">
-                                                        <p class="fw-bold" title="Country Name">Name</p>
+                                                        <p class="fw-bold" title="Page Name">Page Name :</p>
                                                     </div>
                                                     <div class="col-lg-6 col-sm-6">
-                                                        <p>Bangladesh</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Parent Name</p>
-                                                    </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>Intern</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Image</p>
-                                                    </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt="">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Logo</p>
-                                                    </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt="">
-                                                        </p>
+                                                        <p>Home Page</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-sm-5">
-                                                        <p class="fw-bold">Description</p>
+                                                    <div class="col-lg-6 col-sm-5">
+                                                        <p class="fw-bold">Meta Title :</p>
                                                     </div>
-                                                    <div class="col-lg-9 col-sm-6">
+                                                    <div class="col-lg-6 col-sm-6">
+                                                        <p>Intern</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-sm-5">
+                                                        <p class="fw-bold">Page Link :</p>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-6">
+                                                        <a href="#">
+                                                            https://img.freepik.com/free-vector/
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-sm-5">
+                                                        <p class="fw-bold">Google Verification Code :</p>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-6">
+                                                        <p>
+                                                            #asdasdas56
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div>
+                                                    <p class="fw-bold">Meta Description :</p>
                                                         <p>
                                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
                                                             ipsam, doloremque maxime assumenda eaque adipisci eum in iste
                                                             quam, ipsa vitae, commodi voluptatem dicta. Sed hic officiis a
                                                             autem?
                                                         </p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-center text-sm-center">
                                     <div class="card-title table_title">
-                                        <h2 class="text-center">Category</h2>
+                                        <h2 class="text-center">Address</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-end text-sm-center">
@@ -96,11 +96,12 @@
                                 <!--begin::Table row-->
                                 <tr class="text-center text-gray-900 fw-bolder fs-7 text-uppercase">
                                     <th class="" width="5%">Sl</th>
-                                    <th class="" width="10%">Logo</th>
-                                    <th class="" width="25%">Country Name</th>
-                                    <th class="" width="30%">Parent Name</th>
-                                    <th class="" width="10%">Name</th>
-                                    <th class="" width="10%">Image</th>
+                                    <th class="" width="15%">Country Name</th>
+                                    <th class="" width="15%">State Name</th>
+                                    <th class="" width="15%">City Name</th>
+                                    <th class="" width="10%">Phone</th>
+                                    <th class="" width="20%">Address</th>
+                                    <th class="" width="10%">Postal Code</th>
                                     <th class="text-center" width="10%">Action</th>
                                     <!--end::Table row-->
                             </thead>
@@ -110,20 +111,19 @@
                                         1
                                     </td>
                                     <td>
-                                        <img class="img-fluid rounded-circle" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        Bangaldesh
                                     </td>
-                                    <td>Company
+                                    <td>Bangaldesh
                                     </td>
-                                    <td>Company
+                                    <td>Dhaka
                                     </td>
-                                    <td>Company
+                                    <td>015********
                                     </td>
                                     <td>
-                                        <img class="img-fluid" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        Dhaka,Bangaldesh
+                                    </td>
+                                    <td>
+                                        1216
                                     </td>
                                     <td class="d-flex justify-content-between align-items-center">
                                         <a href="#"
@@ -148,23 +148,22 @@
                                 </tr>
                                 <tr class="Even">
                                     <td>
-                                        1
+                                        2
                                     </td>
                                     <td>
-                                        <img class="img-fluid rounded-circle" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        Indea
                                     </td>
-                                    <td>Company
+                                    <td>Delhi
                                     </td>
-                                    <td>Company
+                                    <td>Mina Bazar
                                     </td>
-                                    <td>Company
+                                    <td>015********
                                     </td>
                                     <td>
-                                        <img class="img-fluid" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        Delhi,Mina Bazar, Indea
+                                    </td>
+                                    <td>
+                                        1216
                                     </td>
                                     <td class="d-flex justify-content-between align-items-center">
                                         <a href="#"
@@ -196,10 +195,10 @@
     </div>
     {{-- Add Modal --}}
     <div class="modal fade" id="categoryAddModal" data-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">Add Category</h5>
+                    <h5 class="modal-title">Add Address</h5>
                     <!-- Close button in the header -->
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
@@ -214,10 +213,10 @@
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="validationCustom04" class="form-label required">Country
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom04" class="form-label required mb-0">Country
                                                 Name</label>
-                                            <select class="form-select form-select-solid" name="country_id"
+                                            <select class="form-select form-select-solid form-select-sm" name="country_id"
                                                 data-dropdown-parent="#categoryAddModal" data-control="select2"
                                                 data-placeholder="Select an option" data-allow-clear="true" required>
                                                 <option></option>
@@ -225,69 +224,100 @@
                                                 <option value="2">India</option>
                                                 <option value="2">Pakistan</option>
                                             </select>
-                                            <div class="valid-feedback""> Looks good! </div>
                                             <div class="invalid-feedback"> Please Select Country Name. </div>
                                         </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Name
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom04" class="form-label required mb-0">State Name</label>
+                                            <select class="form-select form-select-solid form-select-sm" name="state_id"
+                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true" required>
+                                                <option></option>
+                                                <option value="1">Bangaldesh</option>
+                                                <option value="2">India</option>
+                                                <option value="2">Pakistan</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select State Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom04" class="form-label required mb-0">City Name</label>
+                                            <select class="form-select form-select-solid form-select-sm" name="city_id"
+                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true" required>
+                                                <option></option>
+                                                <option value="1">Bangaldesh</option>
+                                                <option value="2">India</option>
+                                                <option value="2">Pakistan</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select City Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom04" class="form-label required mb-0">Admin Name</label>
+                                            <select class="form-select form-select-solid form-select-sm" name="admin_id"
+                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true" required>
+                                                <option></option>
+                                                <option value="1">Bangaldesh</option>
+                                                <option value="2">India</option>
+                                                <option value="2">Pakistan</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Admin Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom04" class="form-label required mb-0">User Name</label>
+                                            <select class="form-select form-select-solid form-select-sm" name="user_id"
+                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true" required>
+                                                <option></option>
+                                                <option value="1">Bangaldesh</option>
+                                                <option value="2">India</option>
+                                                <option value="2">Pakistan</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select User Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom04" class="form-label required mb-0">User Type</label>
+                                            <select class="form-select form-select-solid form-select-sm" name="user_type"
+                                                data-dropdown-parent="#categoryAddModal" data-control="select2" data-hide-search="true"
+                                                data-placeholder="Select an option" data-allow-clear="true" required>
+                                                <option></option>
+                                                <option value="1">Bangaldesh</option>
+                                                <option value="2">India</option>
+                                                <option value="2">Pakistan</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Uset Type. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required mb-0">Phone
+                                            </label>
+                                            <input type="number" class="form-control form-control-solid form-control-sm"
+                                                name="postal_code" id="validationCustom01" step="0.01" placeholder="e.g: Phone Number" required>
+                                            <div class="invalid-feedback"> Please Enter Postal Code </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom04" class="form-label required mb-0">Address Type</label>
+                                            <select class="form-select form-select-solid form-select-sm" name="address_type"
+                                                data-dropdown-parent="#categoryAddModal" data-control="select2" data-hide-search="true"
+                                                data-placeholder="Select an option" data-allow-clear="true" required>
+                                                <option></option>
+                                                <option value="1">Bangaldesh</option>
+                                                <option value="2">India</option>
+                                                <option value="2">Pakistan</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Address Type. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required mb-0">Postal Code
                                             </label>
                                             <input type="text" class="form-control form-control-solid form-control-sm"
-                                                name="name" id="validationCustom01" placeholder="Enter Name" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Name </div>
+                                                name="postal_code" id="validationCustom01" placeholder="e.g: Postal Code" required>
+                                            <div class="invalid-feedback"> Please Enter Postal Code </div>
                                         </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Image
+                                        <div class="col-md-12 mb-2">
+                                            <label for="validationCustom01" class="form-label required mb-0">Address
                                             </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="image" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Image </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Logo
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="logo" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Logo </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label">
-                                            </label>
-                                            <div
-                                                class="form-check form-check-custom form-check-warning form-check-solid form-check-sm mt-3 ms-4">
-                                                <input class="form-check-input bg-primary" name="is_parent"
-                                                    value="1" type="checkbox" id="flexRadioLg" />
-                                                <label class="form-check-label" for="flexRadioLg">Is Parent</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1 hide_parent_input" id="parentInputContainer">
-                                            <label for="validationCustom01" class="form-label required">Parent
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="parent_id"
-                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
-                                                data-placeholder="Select an Parent" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
-                                            </select>
-                                            <div class="valid-feedback">Looks good!</div>
-                                            <div class="invalid-feedback">Please Select Parent Name</div>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <label for="validationCustom010"
-                                                class="form-label required">Description</label>
-                                            <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
-                                                placeholder="Enter Description" required></textarea>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter description</div>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                name="address" id="validationCustom01" placeholder="e.g: Address" required>
+                                            <div class="invalid-feedback"> Please Enter Address </div>
                                         </div>
                                     </div>
                                 </div>
@@ -304,10 +334,10 @@
     </div>
     {{-- Edit Modal --}}
     <div class="modal fade" id="categorymentEditModal" data-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">Edit Category</h5>
+                    <h5 class="modal-title">Edit Address</h5>
                     <!-- Close button in the header -->
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
@@ -322,77 +352,115 @@
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="validationCustom04" class="form-label required">Country
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="country_id"
-                                                data-dropdown-parent="#categorymentEditModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Bangaldesh</option>
-                                                <option value="2">India</option>
-                                                <option value="2">Pakistan</option>
-                                                <option value="2">Nepal</option>
-                                            </select>
-                                            <div class="valid-feedback""> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Select Country Name. </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Name
-                                            </label>
-                                            <input type="text" class="form-control form-control-solid form-control-sm"
-                                                name="name" id="validationCustom01" placeholder="Enter Name" name="Ngen It" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Name </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Image
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="image" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Image </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Logo
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="logo" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Logo </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label">
-                                            </label>
-                                            <div
-                                                class="form-check form-check-custom form-check-warning form-check-solid form-check-sm mt-3 ms-4">
-                                                <input class="form-check-input bg-primary" name="is_parent"
-                                                    value="1" type="checkbox" id="flexRadioLg" />
-                                                <label class="form-check-label" for="flexRadioLg">Is Parent</label>
+                                        <div class="col-lg-12 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom04" class="form-label required mb-0">Country
+                                                        Name</label>
+                                                    <select class="form-select form-select-solid form-select-sm" name="country_id"
+                                                        data-dropdown-parent="#categorymentEditModal" data-control="select2"
+                                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                                        <option></option>
+                                                        <option value="1">Bangaldesh</option>
+                                                        <option value="2">India</option>
+                                                        <option value="2">Pakistan</option>
+                                                    </select>
+                                                    <div class="invalid-feedback"> Please Select Country Name. </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom04" class="form-label required mb-0">State Name</label>
+                                                    <select class="form-select form-select-solid form-select-sm" name="state_id"
+                                                        data-dropdown-parent="#categorymentEditModal" data-control="select2"
+                                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                                        <option></option>
+                                                        <option value="1">Bangaldesh</option>
+                                                        <option value="2">India</option>
+                                                        <option value="2">Pakistan</option>
+                                                    </select>
+                                                    <div class="invalid-feedback"> Please Select State Name. </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom04" class="form-label required mb-0">City Name</label>
+                                                    <select class="form-select form-select-solid form-select-sm" name="city_id"
+                                                        data-dropdown-parent="#categorymentEditModal" data-control="select2"
+                                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                                        <option></option>
+                                                        <option value="1">Bangaldesh</option>
+                                                        <option value="2">India</option>
+                                                        <option value="2">Pakistan</option>
+                                                    </select>
+                                                    <div class="invalid-feedback"> Please Select City Name. </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom04" class="form-label required mb-0">Admin Name</label>
+                                                    <select class="form-select form-select-solid form-select-sm" name="admin_id"
+                                                        data-dropdown-parent="#categorymentEditModal" data-control="select2"
+                                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                                        <option></option>
+                                                        <option value="1">Bangaldesh</option>
+                                                        <option value="2">India</option>
+                                                        <option value="2">Pakistan</option>
+                                                    </select>
+                                                    <div class="invalid-feedback"> Please Select Admin Name. </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom04" class="form-label required mb-0">User Name</label>
+                                                    <select class="form-select form-select-solid form-select-sm" name="user_id"
+                                                        data-dropdown-parent="#categorymentEditModal" data-control="select2"
+                                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                                        <option></option>
+                                                        <option value="1">Bangaldesh</option>
+                                                        <option value="2">India</option>
+                                                        <option value="2">Pakistan</option>
+                                                    </select>
+                                                    <div class="invalid-feedback"> Please Select User Name. </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom04" class="form-label required mb-0">User Type</label>
+                                                    <select class="form-select form-select-solid form-select-sm" name="user_type"
+                                                        data-dropdown-parent="#categorymentEditModal" data-control="select2" data-hide-search="true"
+                                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                                        <option></option>
+                                                        <option value="1">Bangaldesh</option>
+                                                        <option value="2">India</option>
+                                                        <option value="2">Pakistan</option>
+                                                    </select>
+                                                    <div class="invalid-feedback"> Please Select Uset Type. </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom01" class="form-label required mb-0">Phone
+                                                    </label>
+                                                    <input type="number" class="form-control form-control-solid form-control-sm"
+                                                        name="postal_code" id="validationCustom01" step="0.01" placeholder="e.g: Phone Number" required>
+                                                    <div class="invalid-feedback"> Please Enter Postal Code </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom04" class="form-label required mb-0">Address Type</label>
+                                                    <select class="form-select form-select-solid form-select-sm" name="address_type"
+                                                        data-dropdown-parent="#categorymentEditModal" data-control="select2" data-hide-search="true"
+                                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                                        <option></option>
+                                                        <option value="1">Bangaldesh</option>
+                                                        <option value="2">India</option>
+                                                        <option value="2">Pakistan</option>
+                                                    </select>
+                                                    <div class="invalid-feedback"> Please Select Address Type. </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <label for="validationCustom01" class="form-label required mb-0">Postal Code
+                                                    </label>
+                                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                                        name="postal_code" id="validationCustom01" placeholder="e.g: Postal Code" required>
+                                                    <div class="invalid-feedback"> Please Enter Postal Code </div>
+                                                </div>
+                                                <div class="col-md-12 mb-2">
+                                                    <label for="validationCustom01" class="form-label required mb-0">Address
+                                                    </label>
+                                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                                        name="address" id="validationCustom01" placeholder="e.g: Address" required>
+                                                    <div class="invalid-feedback"> Please Enter Address </div>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1 hide_parent_input" id="parentInputContainer">
-                                            <label for="validationCustom01" class="form-label required">Parent
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="parent_id"
-                                                data-dropdown-parent="#categorymentEditModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
-                                            </select>
-                                            <div class="valid-feedback">Looks good!</div>
-                                            <div class="invalid-feedback">Please Select Parent Name</div>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <label for="validationCustom010"
-                                                class="form-label required">Description</label>
-                                            <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
-                                                placeholder="Enter Description" required></textarea>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Description</div>
                                         </div>
                                     </div>
                                 </div>
@@ -409,10 +477,10 @@
     </div>
     {{-- View Modal --}}
     <div class="modal fade" id="categoryViewModal" data-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">View </h5>
+                    <h5 class="modal-title">View Address</h5>
                     <!-- Close button in the header -->
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
@@ -430,7 +498,7 @@
                                             <div class="col-lg-6">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-sm-5">
-                                                        <p class="fw-bold" title="Country Name">Name</p>
+                                                        <p class="fw-bold" title="Country Name">Country Name :</p>
                                                     </div>
                                                     <div class="col-lg-6 col-sm-6">
                                                         <p>Bangladesh</p>
@@ -439,38 +507,34 @@
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Parent Name</p>
+                                                    <div class="col-lg-6 col-sm-5">
+                                                        <p class="fw-bold">State Name :</p>
                                                     </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>Intern</p>
+                                                    <div class="col-lg-6 col-sm-6">
+                                                        <p>Bangaldesh</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Image</p>
+                                                    <div class="col-lg-6 col-sm-5">
+                                                        <p class="fw-bold">City Name :</p>
                                                     </div>
-                                                    <div class="col-lg-5 col-sm-6">
+                                                    <div class="col-lg-6 col-sm-6">
                                                         <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt="">
+                                                            Dhaka
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Logo</p>
+                                                    <div class="col-lg-6 col-sm-5">
+                                                        <p class="fw-bold">Phone :</p>
                                                     </div>
-                                                    <div class="col-lg-5 col-sm-6">
+                                                    <div class="col-lg-6 col-sm-6">
                                                         <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt="">
+                                                            015*****
                                                         </p>
                                                     </div>
                                                 </div>
@@ -478,14 +542,11 @@
                                             <div class="col-lg-12">
                                                 <div class="row">
                                                     <div class="col-lg-3 col-sm-5">
-                                                        <p class="fw-bold">Description</p>
+                                                        <p class="fw-bold">Address :</p>
                                                     </div>
                                                     <div class="col-lg-9 col-sm-6">
                                                         <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
-                                                            ipsam, doloremque maxime assumenda eaque adipisci eum in iste
-                                                            quam, ipsa vitae, commodi voluptatem dicta. Sed hic officiis a
-                                                            autem?
+                                                            Dhaka, Mirpur, Mohammadpur, Bangladesh
                                                         </p>
                                                     </div>
                                                 </div>
