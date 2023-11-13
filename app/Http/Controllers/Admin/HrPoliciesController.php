@@ -14,7 +14,7 @@ class HrPoliciesController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.hrPolicie.index');
     }
 
     /**

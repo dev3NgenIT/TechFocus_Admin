@@ -14,7 +14,7 @@ class NewsTrendsController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.newsTrend.index');
     }
 
     /**

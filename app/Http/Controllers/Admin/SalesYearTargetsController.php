@@ -14,7 +14,7 @@ class SalesYearTargetsController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.salesYearTarget.index');
     }
 
     /**

@@ -14,7 +14,7 @@ class SalesTeamTargetsController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.salesTeamTarget.index');
     }
 
     /**

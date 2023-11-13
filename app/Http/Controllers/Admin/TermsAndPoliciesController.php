@@ -14,7 +14,7 @@ class TermsAndPoliciesController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.termsPolicies.index');
     }
 
     /**
