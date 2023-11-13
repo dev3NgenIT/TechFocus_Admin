@@ -8,7 +8,6 @@
                         <div class="container px-0">
                             <div class="row">
                                 <div class="col-lg-4 col-sm-12 text-lg-start text-sm-center">
-                                    <!--begin::Search-->
                                     <div class="d-flex align-items-center position-relative my-1">
                                         <span
                                             class="svg-icon svg-icon-2 svg-icon-gray-700 position-absolute top-50 translate-middle-y ms-4">
@@ -27,18 +26,14 @@
                                             class="form-control form-control-sm form-control-solid w-150px ps-14 rounded-0"
                                             placeholder="Search" style="border: 1px solid #eee;" />
                                     </div>
-                                    <!--end::Search-->
-                                    <!--begin::Export buttons-->
                                     <div id="kt_datatable_example_1_export" class="d-none"></div>
-                                    <!--end::Export buttons-->
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-center text-sm-center">
                                     <div class="card-title table_title">
-                                        <h2 class="text-center">Category</h2>
+                                        <h2 class="text-center">News & Trends Table</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-end text-sm-center">
-                                    <!--begin::Export dropdown-->
                                     <button type="button" class="btn btn-sm btn-light-primary rounded-0"
                                         data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                                         {{-- <span class="svg-icon svg-icon-1 position-absolute ms-4"></span> --}}
@@ -49,41 +44,30 @@
                                         data-bs-target="#categoryAddModal">
                                         Add New
                                     </button>
-                                    <!--begin::Menu-->
                                     <div id="kt_datatable_example_1_export_menu"
                                         class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-200px py-4"
                                         data-kt-menu="true">
-                                        <!--begin::Menu item-->
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-kt-export="copy">
                                                 Copy to clipboard
                                             </a>
                                         </div>
-                                        <!--end::Menu item-->
-                                        <!--begin::Menu item-->
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-kt-export="excel">
                                                 Export as Excel
                                             </a>
                                         </div>
-                                        <!--end::Menu item-->
-                                        <!--begin::Menu item-->
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-kt-export="csv">
                                                 Export as CSV
                                             </a>
                                         </div>
-                                        <!--end::Menu item-->
-                                        <!--begin::Menu item-->
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-kt-export="pdf">
                                                 Export as PDF
                                             </a>
                                         </div>
-                                        <!--end::Menu item-->
                                     </div>
-                                    <!--end::Menu-->
-                                    <!--end::Export dropdown-->
                                 </div>
                             </div>
                         </div>
@@ -93,30 +77,23 @@
                             class="table table-striped table-hover align-middle rounded-0 table-row-bordered border fs-6 g-5"
                             id="kt_datatable_example_1">
                             <thead class="table_header_bg">
-                                <!--begin::Table row-->
                                 <tr class="text-center text-gray-900 fw-bolder fs-7 text-uppercase">
                                     <th class="" width="5%">Sl</th>
-                                    <th class="" width="10%">Logo</th>
-                                    <th class="" width="25%">Country Name</th>
-                                    <th class="" width="30%">Parent Name</th>
-                                    <th class="" width="10%">Name</th>
-                                    <th class="" width="10%">Image</th>
+                                    <th class="" width="20%">Title</th>
+                                    <th class="" width="35%">Header</th>
+                                    <th class="" width="20%">Author</th>
+                                    <th class="" width="10%">Banner Image</th>
                                     <th class="text-center" width="10%">Action</th>
-                                    <!--end::Table row-->
                             </thead>
                             <tbody class="fw-bold text-gray-600 text-center">
                                 <tr class="odd">
                                     <td>
                                         1
                                     </td>
+                                    <td>Company
+                                    </td>
                                     <td>
-                                        <img class="img-fluid rounded-circle" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
-                                    </td>
-                                    <td>Company
-                                    </td>
-                                    <td>Company
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                     </td>
                                     <td>Company
                                     </td>
@@ -130,34 +107,27 @@
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
                                             data-bs-toggle="modal" data-bs-target="#categoryViewModal">
                                             <i class="fa-solid fa-expand"></i>
-                                            <!--View-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
                                             data-bs-toggle="modal" data-bs-target="#categorymentEditModal">
                                             <i class="fa-solid fa-pen"></i>
-                                            <!--Edit-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1 delete"
                                             data-kt-docs-table-filter="delete_row">
                                             <i class="fa-solid fa-trash-can-arrow-up"></i>
-                                            <!--Delete-->
                                         </a>
                                     </td>
                                 </tr>
                                 <tr class="Even">
                                     <td>
-                                        1
+                                        2
+                                    </td>
+                                    <td>Company
                                     </td>
                                     <td>
-                                        <img class="img-fluid rounded-circle" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
-                                    </td>
-                                    <td>Company
-                                    </td>
-                                    <td>Company
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                     </td>
                                     <td>Company
                                     </td>
@@ -171,19 +141,16 @@
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
                                             data-bs-toggle="modal" data-bs-target="#categoryViewModal">
                                             <i class="fa-solid fa-expand"></i>
-                                            <!--View-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
                                             data-bs-toggle="modal" data-bs-target="#categorymentEditModal">
                                             <i class="fa-solid fa-pen"></i>
-                                            <!--Edit-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1 delete"
                                             data-kt-docs-table-filter="delete_row">
                                             <i class="fa-solid fa-trash-can-arrow-up"></i>
-                                            <!--Delete-->
                                         </a>
                                     </td>
                                 </tr>
@@ -196,16 +163,14 @@
     </div>
     {{-- Add Modal --}}
     <div class="modal fade" id="categoryAddModal" data-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">Add Category</h5>
-                    <!-- Close button in the header -->
+                    <h5 class="modal-title ps-5">Add Category</h5>
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
                         <i class="fa-solid fa-circle-xmark"></i>
                     </div>
-                    <!-- End Close button in the header -->
                 </div>
                 <form action="" class="needs-validation" method="post" novalidate>
                     @csrf
@@ -214,80 +179,167 @@
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="validationCustom04" class="form-label required">Country
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Category
                                                 Name</label>
-                                            <select class="form-select form-select-solid" name="country_id"
-                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Bangaldesh</option>
-                                                <option value="2">India</option>
-                                                <option value="2">Pakistan</option>
-                                            </select>
-                                            <div class="valid-feedback""> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Select Country Name. </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Name
-                                            </label>
-                                            <input type="text" class="form-control form-control-solid form-control-sm"
-                                                name="name" id="validationCustom01" placeholder="Enter Name" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Name </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Image
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="image" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Image </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Logo
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="logo" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Logo </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label">
-                                            </label>
-                                            <div
-                                                class="form-check form-check-custom form-check-warning form-check-solid form-check-sm mt-3 ms-4">
-                                                <input class="form-check-input bg-primary" name="is_parent"
-                                                    value="1" type="checkbox" id="flexRadioLg" />
-                                                <label class="form-check-label" for="flexRadioLg">Is Parent</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1 hide_parent_input" id="parentInputContainer">
-                                            <label for="validationCustom01" class="form-label required">Parent
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="parent_id"
-                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
-                                                data-placeholder="Select an Parent" data-allow-clear="true" required>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="category_id" multiple="multiple" required>
                                                 <option></option>
                                                 <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
                                             </select>
-                                            <div class="valid-feedback">Looks good!</div>
-                                            <div class="invalid-feedback">Please Select Parent Name</div>
+                                            <div class="invalid-feedback"> Please Select Category Name. </div>
                                         </div>
 
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Brand
+                                                Name</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="brand_id" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Brand Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Industry
+                                                Name</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="industry_id" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Industry Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Solution
+                                                Name</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="solution_id" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Solution Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Product
+                                                Name</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="product_id" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Product Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Tags</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="tags" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Tags. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Featured</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="featured" data-hide-search="true" required>
+                                                <option></option>
+                                                <option value="0">No</option>
+                                                <option value="1">Yes</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Featured. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Type</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="type" data-hide-search="true" required>
+                                                <option></option>
+                                                <option value="news">News</option>
+                                                <option value="trends">Trends</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Type. </div>
+                                        </div>
+
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Badge
+                                            </label>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Badge" name="badge"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Badge </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Title</label>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Title" name="title"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Title </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Author</label>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Author" name="author"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Author </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Banner Image</label>
+                                            <input type="file" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Banner Image" name="banner_image"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Banner Image </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Thumbnail Image</label>
+                                            <input type="file" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Thumbnail Image" name="thumbnail_image"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Thumbnail Image </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Aditional URL</label>
+                                            <input type="url" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Additional  URL" name="additional_url"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Additional URL</div>
+                                        </div>
                                         <div class="col-md-12">
-                                            <label for="validationCustom010"
-                                                class="form-label required">Description</label>
-                                            <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
-                                                placeholder="Enter Description" required></textarea>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter description</div>
+                                            <label for="validationCustom010" class="form-label required mb-0">Header</label>
+                                            <textarea rows="1" name="header" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Header" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Header</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="validationCustom010" class="form-label required mb-0">Address</label>
+                                            <textarea rows="1" name="address" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Address" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Address</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="validationCustom010" class="form-label required mb-0">Footer</label>
+                                            <textarea rows="1" name="footer" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Footer" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Footer</div>
+                                        </div>
+                                        <div class="col-md-12 mb-1">
+                                            <label for="validationCustom01" class="form-label required ">Short Description</label>
+                                            <textarea id="kt_docs_tinymce_basic" name="short_des" class="tox-target">
+                                            </textarea>
+                                            <div class="invalid-feedback"> Please Enter Title </div>
+                                        </div>
+                                        <div class="col-md-12 mb-1">
+                                            <label for="validationCustom01" class="form-label required ">Long Description</label>
+                                            <textarea id="kt_docs_tinymce_basic2" name="long_des" class="tox-target">
+                                            </textarea>
+                                            <div class="invalid-feedback"> Please Enter Title </div>
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +347,6 @@
                         </div>
                     </div>
                     <div class="modal-footer p-2">
-                        <!-- Button to close the modal in the footer -->
                         <button type="submit" class="btn btn-sm btn-light-primary rounded-0">Submit</button>
                     </div>
                 </form>
@@ -307,13 +358,11 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">Edit Category</h5>
-                    <!-- Close button in the header -->
+                    <h5 class="modal-title ps-5">Edit Category</h5>
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
                         <i class="fa-solid fa-circle-xmark"></i>
                     </div>
-                    <!-- End Close button in the header -->
                 </div>
                 <form action="" class="needs-validation" method="post" novalidate>
                     @csrf
@@ -322,77 +371,167 @@
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="validationCustom04" class="form-label required">Country
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Category
                                                 Name</label>
-                                            <select class="form-select form-select-solid" name="country_id"
-                                                data-dropdown-parent="#categorymentEditModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Bangaldesh</option>
-                                                <option value="2">India</option>
-                                                <option value="2">Pakistan</option>
-                                                <option value="2">Nepal</option>
-                                            </select>
-                                            <div class="valid-feedback""> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Select Country Name. </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Name
-                                            </label>
-                                            <input type="text" class="form-control form-control-solid form-control-sm"
-                                                name="name" id="validationCustom01" placeholder="Enter Name" name="Ngen It" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Name </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Image
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="image" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Image </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Logo
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="logo" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Logo </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label">
-                                            </label>
-                                            <div
-                                                class="form-check form-check-custom form-check-warning form-check-solid form-check-sm mt-3 ms-4">
-                                                <input class="form-check-input bg-primary" name="is_parent"
-                                                    value="1" type="checkbox" id="flexRadioLg" />
-                                                <label class="form-check-label" for="flexRadioLg">Is Parent</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1 hide_parent_input" id="parentInputContainer">
-                                            <label for="validationCustom01" class="form-label required">Parent
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="parent_id"
-                                                data-dropdown-parent="#categorymentEditModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="category_id" multiple="multiple" required>
                                                 <option></option>
                                                 <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
                                             </select>
-                                            <div class="valid-feedback">Looks good!</div>
-                                            <div class="invalid-feedback">Please Select Parent Name</div>
+                                            <div class="invalid-feedback"> Please Select Category Name. </div>
                                         </div>
 
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Brand
+                                                Name</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="brand_id" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Brand Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Industry
+                                                Name</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="industry_id" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Industry Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Solution
+                                                Name</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="solution_id" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Solution Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Product
+                                                Name</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="product_id" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Product Name. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Tags</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="tags" multiple="multiple" required>
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Tags. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Featured</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="featured" data-hide-search="true" required>
+                                                <option></option>
+                                                <option value="0">No</option>
+                                                <option value="1">Yes</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Featured. </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom010" class="form-label required mb-0">Type</label>
+                                            <select class="form-select form-select-solid" data-control="select2"
+                                                data-placeholder="Select an option" data-allow-clear="true"
+                                                name="type" data-hide-search="true" required>
+                                                <option></option>
+                                                <option value="news">News</option>
+                                                <option value="trends">Trends</option>
+                                            </select>
+                                            <div class="invalid-feedback"> Please Select Type. </div>
+                                        </div>
+
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Badge
+                                            </label>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Badge" name="badge"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Badge </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Title</label>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Title" name="title"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Title </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Author</label>
+                                            <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Author" name="author"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Author </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Banner Image</label>
+                                            <input type="file" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Banner Image" name="banner_image"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Banner Image </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Thumbnail Image</label>
+                                            <input type="file" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Thumbnail Image" name="thumbnail_image"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Thumbnail Image </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <label for="validationCustom01" class="form-label required ">Aditional URL</label>
+                                            <input type="url" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Additional  URL" name="additional_url"
+                                                required>
+                                            <div class="invalid-feedback"> Please Enter Additional URL</div>
+                                        </div>
                                         <div class="col-md-12">
-                                            <label for="validationCustom010"
-                                                class="form-label required">Description</label>
-                                            <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
-                                                placeholder="Enter Description" required></textarea>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Description</div>
+                                            <label for="validationCustom010" class="form-label required mb-0">Header</label>
+                                            <textarea rows="1" name="header" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Header" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Header</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="validationCustom010" class="form-label required mb-0">Address</label>
+                                            <textarea rows="1" name="address" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Address" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Address</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="validationCustom010" class="form-label required mb-0">Footer</label>
+                                            <textarea rows="1" name="footer" class="form-control form-control-sm form-control-solid"
+                                                placeholder="Enter Footer" required></textarea>
+                                            <div class="invalid-feedback"> Please Enter Footer</div>
+                                        </div>
+                                        <div class="col-md-12 mb-1">
+                                            <label for="validationCustom01" class="form-label required ">Short Description</label>
+                                            <textarea id="kt_docs_tinymce_basic" name="short_des" class="tox-target">
+                                            </textarea>
+                                            <div class="invalid-feedback"> Please Enter Title </div>
+                                        </div>
+                                        <div class="col-md-12 mb-1">
+                                            <label for="validationCustom01" class="form-label required ">Long Description</label>
+                                            <textarea id="kt_docs_tinymce_basic2" name="long_des" class="tox-target">
+                                            </textarea>
+                                            <div class="invalid-feedback"> Please Enter Title </div>
                                         </div>
                                     </div>
                                 </div>
@@ -400,7 +539,6 @@
                         </div>
                     </div>
                     <div class="modal-footer p-2">
-                        <!-- Button to close the modal in the footer -->
                         <button type="submit" class="btn btn-sm btn-light-primary rounded-0">Submit</button>
                     </div>
                 </form>
@@ -412,8 +550,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">View </h5>
-                    <!-- Close button in the header -->
+                    <h5 class="modal-title ps-5">View </h5>
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
                         <i class="fa-solid fa-circle-xmark"></i>
@@ -501,4 +638,29 @@
         </div>
     </div>
 @endsection
+@section('script')
+    <script>
+        var options = {
+            selector: "#kt_docs_tinymce_basic"
+        };
 
+        if (KTApp.isDarkMode()) {
+            options["skin"] = "oxide-dark";
+            options["content_css"] = "dark";
+        }
+
+        tinymce.init(options);
+    </script>
+    <script>
+        var options = {
+            selector: "#kt_docs_tinymce_basic2"
+        };
+
+        if (KTApp.isDarkMode()) {
+            options["skin"] = "oxide-dark";
+            options["content_css"] = "dark";
+        }
+
+        tinymce.init(options);
+    </script>
+@endsection

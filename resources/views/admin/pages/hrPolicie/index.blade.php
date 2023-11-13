@@ -8,7 +8,6 @@
                         <div class="container px-0">
                             <div class="row">
                                 <div class="col-lg-4 col-sm-12 text-lg-start text-sm-center">
-                                    <!--begin::Search-->
                                     <div class="d-flex align-items-center position-relative my-1">
                                         <span
                                             class="svg-icon svg-icon-2 svg-icon-gray-700 position-absolute top-50 translate-middle-y ms-4">
@@ -27,18 +26,14 @@
                                             class="form-control form-control-sm form-control-solid w-150px ps-14 rounded-0"
                                             placeholder="Search" style="border: 1px solid #eee;" />
                                     </div>
-                                    <!--end::Search-->
-                                    <!--begin::Export buttons-->
                                     <div id="kt_datatable_example_1_export" class="d-none"></div>
-                                    <!--end::Export buttons-->
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-center text-sm-center">
                                     <div class="card-title table_title">
-                                        <h2 class="text-center">Category</h2>
+                                        <h2 class="text-center">HR Polices</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-end text-sm-center">
-                                    <!--begin::Export dropdown-->
                                     <button type="button" class="btn btn-sm btn-light-primary rounded-0"
                                         data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                                         {{-- <span class="svg-icon svg-icon-1 position-absolute ms-4"></span> --}}
@@ -46,44 +41,33 @@
                                     </button>
                                     <button type="button" class="btn btn-sm btn-light-success rounded-0"
                                         data-kt-menu-placement="bottom-end" data-bs-toggle="modal"
-                                        data-bs-target="#categoryAddModal">
+                                        data-bs-target="#hrPoliciesAddModal">
                                         Add New
                                     </button>
-                                    <!--begin::Menu-->
                                     <div id="kt_datatable_example_1_export_menu"
                                         class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-200px py-4"
                                         data-kt-menu="true">
-                                        <!--begin::Menu item-->
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-kt-export="copy">
                                                 Copy to clipboard
                                             </a>
                                         </div>
-                                        <!--end::Menu item-->
-                                        <!--begin::Menu item-->
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-kt-export="excel">
                                                 Export as Excel
                                             </a>
                                         </div>
-                                        <!--end::Menu item-->
-                                        <!--begin::Menu item-->
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-kt-export="csv">
                                                 Export as CSV
                                             </a>
                                         </div>
-                                        <!--end::Menu item-->
-                                        <!--begin::Menu item-->
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-kt-export="pdf">
                                                 Export as PDF
                                             </a>
                                         </div>
-                                        <!--end::Menu item-->
                                     </div>
-                                    <!--end::Menu-->
-                                    <!--end::Export dropdown-->
                                 </div>
                             </div>
                         </div>
@@ -93,16 +77,14 @@
                             class="table table-striped table-hover align-middle rounded-0 table-row-bordered border fs-6 g-5"
                             id="kt_datatable_example_1">
                             <thead class="table_header_bg">
-                                <!--begin::Table row-->
                                 <tr class="text-center text-gray-900 fw-bolder fs-7 text-uppercase">
                                     <th class="" width="5%">Sl</th>
-                                    <th class="" width="10%">Logo</th>
-                                    <th class="" width="25%">Country Name</th>
-                                    <th class="" width="30%">Parent Name</th>
-                                    <th class="" width="10%">Name</th>
-                                    <th class="" width="10%">Image</th>
+                                    <th class="" width="15%">Country Name</th>
+                                    <th class="" width="35%">Title</th>
+                                    <th class="" width="15%">Effective Date</th>
+                                    <th class="" width="10%">Version</th>
+                                    <th class="" width="10%">Status</th>
                                     <th class="text-center" width="10%">Action</th>
-                                    <!--end::Table row-->
                             </thead>
                             <tbody class="fw-bold text-gray-600 text-center">
                                 <tr class="odd">
@@ -110,80 +92,72 @@
                                         1
                                     </td>
                                     <td>
-                                        <img class="img-fluid rounded-circle" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
-                                    </td>
-                                    <td>Company
-                                    </td>
-                                    <td>Company
-                                    </td>
-                                    <td>Company
+                                        Bangladesh
                                     </td>
                                     <td>
-                                        <img class="img-fluid" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        This Is The Title
+                                    </td>
+                                    <td>
+                                        11/01/2023
+                                    </td>
+                                    <td>
+                                        V-0.2
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-success">Active</span>
                                     </td>
                                     <td class="d-flex justify-content-between align-items-center">
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
-                                            data-bs-toggle="modal" data-bs-target="#categoryViewModal">
+                                            data-bs-toggle="modal" data-bs-target="#hrPoliciesViewModal">
                                             <i class="fa-solid fa-expand"></i>
-                                            <!--View-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
-                                            data-bs-toggle="modal" data-bs-target="#categorymentEditModal">
+                                            data-bs-toggle="modal" data-bs-target="#hrPoliciesEditModal">
                                             <i class="fa-solid fa-pen"></i>
-                                            <!--Edit-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1 delete"
                                             data-kt-docs-table-filter="delete_row">
                                             <i class="fa-solid fa-trash-can-arrow-up"></i>
-                                            <!--Delete-->
                                         </a>
                                     </td>
                                 </tr>
-                                <tr class="Even">
+                                <tr class="even">
                                     <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        <img class="img-fluid rounded-circle" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
-                                    </td>
-                                    <td>Company
-                                    </td>
-                                    <td>Company
-                                    </td>
-                                    <td>Company
+                                        2
                                     </td>
                                     <td>
-                                        <img class="img-fluid" width="35px"
-                                            src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                            alt="">
+                                        Nepal
+                                    </td>
+                                    <td>
+                                        This Is The Title
+                                    </td>
+                                    <td>
+                                        15/01/2023
+                                    </td>
+                                    <td>
+                                        V-0.5
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-info">Inactive</span>
                                     </td>
                                     <td class="d-flex justify-content-between align-items-center">
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
-                                            data-bs-toggle="modal" data-bs-target="#categoryViewModal">
+                                            data-bs-toggle="modal" data-bs-target="#hrPoliciesViewModal">
                                             <i class="fa-solid fa-expand"></i>
-                                            <!--View-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
-                                            data-bs-toggle="modal" data-bs-target="#categorymentEditModal">
+                                            data-bs-toggle="modal" data-bs-target="#hrPoliciesEditModal">
                                             <i class="fa-solid fa-pen"></i>
-                                            <!--Edit-->
                                         </a>
                                         <a href="#"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1 delete"
                                             data-kt-docs-table-filter="delete_row">
                                             <i class="fa-solid fa-trash-can-arrow-up"></i>
-                                            <!--Delete-->
                                         </a>
                                     </td>
                                 </tr>
@@ -195,107 +169,108 @@
         </div>
     </div>
     {{-- Add Modal --}}
-    <div class="modal fade" id="categoryAddModal" data-backdrop="static">
+    <div class="modal fade" id="hrPoliciesAddModal" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">Add Category</h5>
-                    <!-- Close button in the header -->
+                    <h5 class="modal-title ps-5">Add HR Policies</h5>
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
                         <i class="fa-solid fa-circle-xmark"></i>
                     </div>
-                    <!-- End Close button in the header -->
                 </div>
                 <form action="" class="needs-validation" method="post" novalidate>
                     @csrf
                     <div class="modal-body">
                         <div class="container px-0">
                             <div class="row">
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="validationCustom04" class="form-label required">Country
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="country_id"
-                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Bangaldesh</option>
-                                                <option value="2">India</option>
-                                                <option value="2">Pakistan</option>
-                                            </select>
-                                            <div class="valid-feedback""> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Select Country Name. </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Name
-                                            </label>
-                                            <input type="text" class="form-control form-control-solid form-control-sm"
-                                                name="name" id="validationCustom01" placeholder="Enter Name" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Name </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Image
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="image" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Image </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Logo
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="logo" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Logo </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label">
-                                            </label>
-                                            <div
-                                                class="form-check form-check-custom form-check-warning form-check-solid form-check-sm mt-3 ms-4">
-                                                <input class="form-check-input bg-primary" name="is_parent"
-                                                    value="1" type="checkbox" id="flexRadioLg" />
-                                                <label class="form-check-label" for="flexRadioLg">Is Parent</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1 hide_parent_input" id="parentInputContainer">
-                                            <label for="validationCustom01" class="form-label required">Parent
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="parent_id"
-                                                data-dropdown-parent="#categoryAddModal" data-control="select2"
-                                                data-placeholder="Select an Parent" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
-                                            </select>
-                                            <div class="valid-feedback">Looks good!</div>
-                                            <div class="invalid-feedback">Please Select Parent Name</div>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <label for="validationCustom010"
-                                                class="form-label required">Description</label>
-                                            <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Country
+                                        Name</label>
+                                    <select class="form-select form-select-solid form-select-sm" name="country_id"
+                                        data-dropdown-parent="#hrPoliciesAddModal" data-control="select2"
+                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                        <option></option>
+                                        <option value="1">Bangaldesh</option>
+                                        <option value="2">India</option>
+                                        <option value="2">Pakistan</option>
+                                    </select>
+                                    <div class="invalid-feedback"> Please Select Country Name. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Company Name</label>
+                                    <select class="form-select form-select-solid form-select-sm" name="company_id"
+                                        data-dropdown-parent="#hrPoliciesAddModal" data-control="select2"
+                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                        <option></option>
+                                        <option value="1">Bangaldesh</option>
+                                        <option value="2">India</option>
+                                        <option value="2">Pakistan</option>
+                                    </select>
+                                    <div class="invalid-feedback"> Please Select Company Name. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Dynamic Category Name</label>
+                                    <select class="form-select form-select-solid form-select-sm" name="dynamic_category_id"
+                                        data-dropdown-parent="#hrPoliciesAddModal" data-control="select2"
+                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                        <option></option>
+                                        <option value="1">Bangaldesh</option>
+                                        <option value="2">India</option>
+                                        <option value="2">Pakistan</option>
+                                    </select>
+                                    <div class="invalid-feedback"> Enter Dynamic Category Name. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Status</label>
+                                    <select class="form-select form-select-solid form-select-sm" name="status"
+                                        data-dropdown-parent="#hrPoliciesAddModal" data-control="select2"
+                                        data-placeholder="Select an option" data-allow-clear="true" data-hide-search="true" required>
+                                        <option></option>
+                                        <option value="active">Active</option>
+                                        <option value="inactive">Inactive</option>
+                                        <option value="archived">Archived</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please Choose Status. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Title</label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Title" name="title"
+                                                required>
+                                    <div class="invalid-feedback"> Please Enter Title. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Effective Date</label>
+                                    <input type="date" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Effective Date" name="effective_date"
+                                                required>
+                                    <div class="invalid-feedback"> Please Enter Effective Date. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Expiration Date</label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Expiration Date" name="expiration_date"
+                                                required>
+                                    <div class="invalid-feedback"> Please Enter Expiration Date. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Version</label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Version" name="version"
+                                                required>
+                                    <div class="invalid-feedback"> Please Enter Version. </div>
+                                </div>
+                                <div class="col-lg-12 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Description</label>
+                                    <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
                                                 placeholder="Enter Description" required></textarea>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter description</div>
-                                        </div>
-                                    </div>
+                                    <div class="invalid-feedback"> Please Enter Version. </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer p-2">
-                        <!-- Button to close the modal in the footer -->
                         <button type="submit" class="btn btn-sm btn-light-primary rounded-0">Submit</button>
                     </div>
                 </form>
@@ -303,104 +278,108 @@
         </div>
     </div>
     {{-- Edit Modal --}}
-    <div class="modal fade" id="categorymentEditModal" data-backdrop="static">
+    <div class="modal fade" id="hrPoliciesEditModal" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">Edit Category</h5>
-                    <!-- Close button in the header -->
+                    <h5 class="modal-title ps-5">Edit HR Policies</h5>
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
                         <i class="fa-solid fa-circle-xmark"></i>
                     </div>
-                    <!-- End Close button in the header -->
                 </div>
                 <form action="" class="needs-validation" method="post" novalidate>
                     @csrf
                     <div class="modal-body">
                         <div class="container px-0">
                             <div class="row">
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="validationCustom04" class="form-label required">Country
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="country_id"
-                                                data-dropdown-parent="#categorymentEditModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Bangaldesh</option>
-                                                <option value="2">India</option>
-                                                <option value="2">Pakistan</option>
-                                                <option value="2">Nepal</option>
-                                            </select>
-                                            <div class="valid-feedback""> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Select Country Name. </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Name
-                                            </label>
-                                            <input type="text" class="form-control form-control-solid form-control-sm"
-                                                name="name" id="validationCustom01" placeholder="Enter Name" name="Ngen It" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Name </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Image
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="image" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Image </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label required ">Logo
-                                            </label>
-                                            <input type="file" class="form-control form-control-solid form-control-sm"
-                                                name="logo" id="validationCustom01" required>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Logo </div>
-                                        </div>
-                                        <div class="col-md-6 mb-1">
-                                            <label for="validationCustom01" class="form-label">
-                                            </label>
-                                            <div
-                                                class="form-check form-check-custom form-check-warning form-check-solid form-check-sm mt-3 ms-4">
-                                                <input class="form-check-input bg-primary" name="is_parent"
-                                                    value="1" type="checkbox" id="flexRadioLg" />
-                                                <label class="form-check-label" for="flexRadioLg">Is Parent</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 mb-1 hide_parent_input" id="parentInputContainer">
-                                            <label for="validationCustom01" class="form-label required">Parent
-                                                Name</label>
-                                            <select class="form-select form-select-solid" name="parent_id"
-                                                data-dropdown-parent="#categorymentEditModal" data-control="select2"
-                                                data-placeholder="Select an option" data-allow-clear="true" required>
-                                                <option></option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
-                                            </select>
-                                            <div class="valid-feedback">Looks good!</div>
-                                            <div class="invalid-feedback">Please Select Parent Name</div>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <label for="validationCustom010"
-                                                class="form-label required">Description</label>
-                                            <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Country
+                                        Name</label>
+                                    <select class="form-select form-select-solid form-select-sm" name="country_id"
+                                        data-dropdown-parent="#hrPoliciesEditModal" data-control="select2"
+                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                        <option></option>
+                                        <option value="1">Bangaldesh</option>
+                                        <option value="2">India</option>
+                                        <option value="2">Pakistan</option>
+                                    </select>
+                                    <div class="invalid-feedback"> Please Select Country Name. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Company Name</label>
+                                    <select class="form-select form-select-solid form-select-sm" name="company_id"
+                                        data-dropdown-parent="#hrPoliciesEditModal" data-control="select2"
+                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                        <option></option>
+                                        <option value="1">Bangaldesh</option>
+                                        <option value="2">India</option>
+                                        <option value="2">Pakistan</option>
+                                    </select>
+                                    <div class="invalid-feedback"> Please Select Company Name. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Dynamic Category Name</label>
+                                    <select class="form-select form-select-solid form-select-sm" name="dynamic_category_id"
+                                        data-dropdown-parent="#hrPoliciesEditModal" data-control="select2"
+                                        data-placeholder="Select an option" data-allow-clear="true" required>
+                                        <option></option>
+                                        <option value="1">Bangaldesh</option>
+                                        <option value="2">India</option>
+                                        <option value="2">Pakistan</option>
+                                    </select>
+                                    <div class="invalid-feedback"> Enter Dynamic Category Name. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Status</label>
+                                    <select class="form-select form-select-solid form-select-sm" name="status"
+                                        data-dropdown-parent="#hrPoliciesEditModal" data-control="select2"
+                                        data-placeholder="Select an option" data-allow-clear="true" data-hide-search="true" required>
+                                        <option></option>
+                                        <option value="active">Active</option>
+                                        <option value="inactive">Inactive</option>
+                                        <option value="archived">Archived</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please Choose Status. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Title</label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Title" name="title"
+                                                required>
+                                    <div class="invalid-feedback"> Please Enter Title. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Effective Date</label>
+                                    <input type="date" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Effective Date" name="effective_date"
+                                                required>
+                                    <div class="invalid-feedback"> Please Enter Effective Date. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Expiration Date</label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Expiration Date" name="expiration_date"
+                                                required>
+                                    <div class="invalid-feedback"> Please Enter Expiration Date. </div>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Version</label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                                id="validationCustom01" placeholder="Enter Version" name="version"
+                                                required>
+                                    <div class="invalid-feedback"> Please Enter Version. </div>
+                                </div>
+                                <div class="col-lg-12 mb-2">
+                                    <label for="validationCustom04" class="form-label required mb-0">Description</label>
+                                    <textarea rows="1" name="description" class="form-control form-control-sm form-control-solid"
                                                 placeholder="Enter Description" required></textarea>
-                                            <div class="valid-feedback"> Looks good! </div>
-                                            <div class="invalid-feedback"> Please Enter Description</div>
-                                        </div>
-                                    </div>
+                                    <div class="invalid-feedback"> Please Enter Version. </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer p-2">
-                        <!-- Button to close the modal in the footer -->
                         <button type="submit" class="btn btn-sm btn-light-primary rounded-0">Submit</button>
                     </div>
                 </form>
@@ -408,12 +387,11 @@
         </div>
     </div>
     {{-- View Modal --}}
-    <div class="modal fade" id="categoryViewModal" data-backdrop="static">
+    <div class="modal fade" id="hrPoliciesViewModal" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">View </h5>
-                    <!-- Close button in the header -->
+                    <h5 class="modal-title ps-5">View HR Policies</h5>
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
                         <i class="fa-solid fa-circle-xmark"></i>
@@ -427,66 +405,58 @@
                                     <p class="badge badge-info custom-badge">Info</span>
                                     <div class="card-body p-1 px-2">
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="col-lg-6 col-sm-5">
-                                                        <p class="fw-bold" title="Country Name">Name</p>
+                                                    <div class="col-lg-5 col-sm-5">
+                                                        <p class="fw-bold" title="Country Name">Country Name :</p>
                                                     </div>
-                                                    <div class="col-lg-6 col-sm-6">
+                                                    <div class="col-lg-7 col-sm-6">
                                                         <p>Bangladesh</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Parent Name</p>
+                                                    <div class="col-lg-5 col-sm-5">
+                                                        <p class="fw-bold">Title :</p>
                                                     </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>Intern</p>
+                                                    <div class="col-lg-7 col-sm-6">
+                                                        <p>This is Title</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Image</p>
+                                                    <div class="col-lg-5 col-sm-5">
+                                                        <p class="fw-bold">Effective Date :</p>
                                                     </div>
                                                     <div class="col-lg-5 col-sm-6">
                                                         <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt="">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Logo</p>
-                                                    </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt="">
+                                                           11/12/2023
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-sm-5">
-                                                        <p class="fw-bold">Description</p>
+                                                    <div class="col-lg-5 col-sm-5">
+                                                        <p class="fw-bold">Version :</p>
                                                     </div>
-                                                    <div class="col-lg-9 col-sm-6">
+                                                    <div class="col-lg-7 col-sm-6">
                                                         <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
-                                                            ipsam, doloremque maxime assumenda eaque adipisci eum in iste
-                                                            quam, ipsa vitae, commodi voluptatem dicta. Sed hic officiis a
-                                                            autem?
-                                                        </p>
+                                                           v-0.2
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-sm-5">
+                                                        <p class="fw-bold">Status :</p>
+                                                    </div>
+                                                    <div class="col-lg-7 col-sm-6">
+                                                        <span class="badge bg-info">Inactive</span>
+                                                        <span class="badge bg-success">Active</span>
                                                     </div>
                                                 </div>
                                             </div>
