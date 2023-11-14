@@ -10,7 +10,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-sm-12 text-lg-start text-sm-center">
                                     <div class="card-title ps-3">
-                                        <h2 class="text-start">Company Add From</h2>
+                                        <h2 class="text-start">Company Edit From</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-12 text-lg-end text-sm-center">
@@ -23,6 +23,7 @@
                     <div class="card-body">
                         <form action="" class="needs-validation" method="post" enctype="multipart/form-data" novalidate>
                             @csrf
+                            @method('PUT')
                             <div class="container px-0">
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12">
@@ -214,99 +215,6 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- View Modal --}}
-    <div class="modal fade" id="categoryViewModal" data-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-0 border-0 shadow-sm">
-                <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title">View </h5>
-                    <!-- Close button in the header -->
-                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
-                        aria-label="Close">
-                        <i class="fa-solid fa-circle-xmark"></i>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container px-0">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="card border rounded-0">
-                                    <p class="badge badge-info custom-badge">Info</span>
-                                    <div class="card-body p-1 px-2">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-sm-5">
-                                                        <p class="fw-bold" title="Country Name">Name</p>
-                                                    </div>
-                                                    <div class="col-lg-6 col-sm-6">
-                                                        <p>Bangladesh</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Parent Name</p>
-                                                    </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>Intern</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Image</p>
-                                                    </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt=">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Logo</p>
-                                                    </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt=">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="row">
-                                                    <div class="col-lg-3 col-sm-5">
-                                                        <p class="fw-bold">Description</p>
-                                                    </div>
-                                                    <div class="col-lg-9 col-sm-6">
-                                                        <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
-                                                            ipsam, doloremque maxime assumenda eaque adipisci eum in iste
-                                                            quam, ipsa vitae, commodi voluptatem dicta. Sed hic officiis a
-                                                            autem?
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

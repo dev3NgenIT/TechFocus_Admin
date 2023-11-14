@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('terms_and_policies', function (Blueprint $table) {
             $table->foreignId('country_id')->nullable()->constrained('countries')->cascadeOnDelete();
-            $table->foreignId('comany_id')->nullable()->constrained('companies')->cascadeOnDelete();
+            $table->foreignId('company_id')->nullable()->constrained('companies')->cascadeOnDelete();
             $table->string('name');
             $table->longText('content');
             $table->boolean('is_active')->default(true);

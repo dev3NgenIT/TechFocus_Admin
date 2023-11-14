@@ -314,8 +314,8 @@
                                                 data-control="select2" data-placeholder="Select an option"
                                                 data-allow-clear="true" required>
                                                 <option></option>
-                                                <option value="acknowledged">Acknowledged</option>
                                                 <option value="pending">Pending</option>
+                                                <option value="acknowledged">Acknowledged</option>
                                             </select>
                                             <div class="invalid-feedback">Please Select Policy Name.</div>
                                         </div>
