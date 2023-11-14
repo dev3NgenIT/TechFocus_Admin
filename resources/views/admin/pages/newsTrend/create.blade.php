@@ -197,7 +197,7 @@
                                             </div>
                                             <div class="col-md-12 mb-1 mt-3">
                                                 <label for="validationCustom01" class="form-label required mb-0">Long Description</label>
-                                                <textarea id="kt_docs_tinymce_plugins" name="long_des" class="tox-target">
+                                                <textarea name="long_des" class="tox-target kt_docs_tinymce_plugins">
                                                     <h1>Quick and Simple TinyMCE 5 Integration</h1>
                                                     <p>Here goes the&nbsp;<a href="#">Minitial content of the editor</a>. Lorem Ipsum is simply dummy text of the&nbsp;<em>printing and typesetting</em>&nbsp;industry.</p>
                                                     <blockquote>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
