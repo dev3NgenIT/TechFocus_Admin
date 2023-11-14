@@ -24,7 +24,8 @@ class NewsTrendsController extends Controller
      */
     public function create()
     {
-        //
+        // return view('admin.pages.companies.create');
+        return view('admin.pages.newsTrend.edit');
     }
 
     /**

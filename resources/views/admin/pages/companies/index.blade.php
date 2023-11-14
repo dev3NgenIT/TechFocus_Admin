@@ -101,7 +101,6 @@
                                     <th class="" width="25%">Website</th>
                                     <th class="text-center" width="10%">Action</th>
                                     <!--end::Table row-->
-
                             </thead>
                             <tbody class="fw-bold text-gray-600 text-center">
                                 <tr class="odd">

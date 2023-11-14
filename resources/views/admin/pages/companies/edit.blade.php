@@ -34,48 +34,60 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="name"
                                                     id="validationCustom01" placeholder="E.g : Your Name" required>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please Enter Name </div>
                                             </div>
+
+
+
+
                                             <div class="col-md-3 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">Industry</label>
                                                 <select class="form-select form-select-solid form-select-sm" name="industry"
-                                                data-control="select2" data-placeholder="Select an option" data-allow-clear="true"  required>
+                                                data-control="select2"  multiple="multiple" data-placeholder="Select an option" 
+                                                data-allow-clear="true"  required>
                                                     <option></option>
                                                     <option value="1">Option 1</option>
                                                     <option value="2">Option 2</option>
                                                 </select>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Industry. </div>
                                             </div>
+
+
+
+
                                             <div class="col-md-3 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">Country</label>
                                                 <select class="form-select form-select-solid form-select-sm" name="country"
-                                                data-control="select2" data-placeholder="Select an option" data-allow-clear="true" required>
+                                                data-control="select2"  multiple="multiple" data-placeholder="Select an option" data-allow-clear="true" required>
                                                     <option></option>
                                                     <option value="1">Option 1</option>
                                                     <option value="2">Option 2</option>
                                                 </select>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Country. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">Location</label>
                                                 <select class="form-select form-select-solid form-select-sm"   name="location"
-                                                data-control="select2" data-placeholder="Select an option" data-allow-clear="true">
+                                                data-control="select2"  multiple="multiple" data-hide-search="false" data-placeholder="Select an option" data-allow-clear="true">
                                                     <option></option>
                                                     <option value="1">Option 1</option>
                                                     <option value="2">Option 2</option>
                                                 </select>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Location. </div>
                                             </div>
+
+
+
+
+
+
+
+
                                             <div class="col-md-3 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">Phone</label>
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="phone"
                                                     id="validationCustom01" placeholder="E.g: 017 **** ****">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Phone. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -83,7 +95,6 @@
                                                 <input type="email"
                                                     class="form-control form-control-solid form-control-sm" name="Email"
                                                     id="validationCustom01" placeholder="E.g: yourmail@mail.com">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Email. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -91,7 +102,6 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="Email"
                                                     id="validationCustom01" placeholder="E.g: yourwebsite.com">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Website. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -100,7 +110,6 @@
                                                 <input type="file"
                                                     class="form-control form-control-solid form-control-sm" name="logo"
                                                     id="validationCustom01">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please Enter Logo </div>
                                             </div>
 
@@ -109,7 +118,6 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="postal_code"
                                                     id="validationCustom01" placeholder="E.g: 1265">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Postal Code. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -117,7 +125,6 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="contact_name"
                                                     id="validationCustom01" placeholder="E.g: Your Contact Name">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Contact Name. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -125,7 +132,6 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="contact_email"
                                                     id="validationCustom01" placeholder="E.g: demo@mail.com">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Contact Email. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -133,7 +139,6 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="contact_phone"
                                                     id="validationCustom01" placeholder="E.g: 015 **** ****">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Contact Phone. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -145,7 +150,6 @@
                                                     <option value="1">Option 1</option>
                                                     <option value="2">Option 2</option>
                                                 </select>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Headquater Country Name. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -153,7 +157,6 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="founder"
                                                     id="validationCustom01" placeholder="E.g: Founder">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Founder. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -161,7 +164,6 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="ceo"
                                                     id="validationCustom01" placeholder="E.g: CEO">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a CEO. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
@@ -169,38 +171,32 @@
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="year_founded"
                                                     id="validationCustom01" placeholder="E.g: 1920">
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Year Founded. </div>
                                             </div>
 
                                             <div class="col-md-3 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">Mission</label>
                                                 <textarea rows="1" name="textarea_input" name="mission" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Year Founded. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">Vision</label>
                                                 <textarea rows="1" name="textarea_input" name="vision" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Vision. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">History</label>
                                                 <textarea rows="1" name="textarea_input" name="history" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a History. </div>
                                             </div>
                                             <div class="col-md-3 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">About</label>
                                                 <textarea rows="1" name="textarea_input" name="about" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a About. </div>
                                             </div>
                                             <div class="col-md-12 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">Headquarter</label>
                                                 <textarea rows="1" name="textarea_input" name="headquarter" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="valid-feedback"> Looks good! </div>
                                                 <div class="invalid-feedback"> Please provide a Headquarter. </div>
                                             </div>
 

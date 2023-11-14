@@ -253,8 +253,7 @@
                                         </div>
                                         <div class="col-md-12 mb-2">
                                             <label for="validationCustom01" class="form-label required mb-0">Content</label>
-                                            <textarea id="kt_docs_tinymce_basic" name="content" class="tox-target">
-                                            </textarea>
+                                            <textarea id="kt_docs_tinymce_basic" name="content" class="tox-target"></textarea>
                                             <div class="invalid-feedback"> Please Enter content </div>
                                         </div>
                                     </div>
@@ -400,65 +399,58 @@
                                     <p class="badge badge-info custom-badge">Info</span>
                                     <div class="card-body p-1 px-2">
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="col-lg-6 col-sm-5">
+                                                    <div class="col-lg-7 col-sm-5">
                                                         <p class="fw-bold" title="Company Name">Company Name</p>
                                                     </div>
-                                                    <div class="col-lg-6 col-sm-6">
+                                                    <div class="col-lg-5 col-sm-6">
                                                         <p>NGen IT</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Parent Name</p>
+                                                        <p class="fw-bold">Name</p>
                                                     </div>
                                                     <div class="col-lg-5 col-sm-6">
-                                                        <p>Intern</p>
+                                                        <p>Habib Ullah</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Image</p>
+                                                        <p class="fw-bold">Is Active</p>
                                                     </div>
                                                     <div class="col-lg-5 col-sm-6">
                                                         <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt="">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-sm-5">
-                                                        <p class="fw-bold">Logo</p>
-                                                    </div>
-                                                    <div class="col-lg-5 col-sm-6">
-                                                        <p>
-                                                            <img class="img-fluid rounded-circle" width="35px"
-                                                                src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
-                                                                alt="">
+                                                            <span class="badge bg-success">Yes</span>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-sm-5">
-                                                        <p class="fw-bold">Description</p>
+                                                    <div class="col-lg-7 col-sm-5">
+                                                        <p class="fw-bold">Version</p>
                                                     </div>
-                                                    <div class="col-lg-9 col-sm-6">
+                                                    <div class="col-lg-5 col-sm-6">
                                                         <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
-                                                            ipsam, doloremque maxime assumenda eaque adipisci eum in iste
-                                                            quam, ipsa vitae, commodi voluptatem dicta. Sed hic officiis a
-                                                            autem?
+                                                            V0.5
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-sm-5">
+                                                        <p class="fw-bold">Expiration Date</p>
+                                                    </div>
+                                                    <div class="col-lg-5 col-sm-6">
+                                                        <p>
+                                                            11/12/2023
                                                         </p>
                                                     </div>
                                                 </div>
@@ -487,9 +479,9 @@
 
         tinymce.init(options);
     </script>
-<script>
+    <script>
         tinymce.init({
-    selector: '#kt_docs_tinymce_basic-2'
-});
-    </script>
+        selector: '#kt_docs_tinymce_basic-2'
+        });
+        </script>
 @endsection
