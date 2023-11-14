@@ -173,33 +173,93 @@
                                                     id="validationCustom01" placeholder="E.g: 1920">
                                                 <div class="invalid-feedback"> Please provide a Year Founded. </div>
                                             </div>
-
-                                            <div class="col-md-3 mb-2">
-                                                <label for="validationCustom04" class="form-label required mb-0">Mission</label>
-                                                <textarea rows="1" name="textarea_input" name="mission" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="invalid-feedback"> Please provide a Year Founded. </div>
-                                            </div>
-                                            <div class="col-md-3 mb-2">
-                                                <label for="validationCustom04" class="form-label required mb-0">Vision</label>
-                                                <textarea rows="1" name="textarea_input" name="vision" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="invalid-feedback"> Please provide a Vision. </div>
-                                            </div>
-                                            <div class="col-md-3 mb-2">
-                                                <label for="validationCustom04" class="form-label required mb-0">History</label>
-                                                <textarea rows="1" name="textarea_input" name="history" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="invalid-feedback"> Please provide a History. </div>
-                                            </div>
-                                            <div class="col-md-3 mb-2">
-                                                <label for="validationCustom04" class="form-label required mb-0">About</label>
-                                                <textarea rows="1" name="textarea_input" name="about" class="form-control form-control-sm form-control-solid"></textarea>
-                                                <div class="invalid-feedback"> Please provide a About. </div>
-                                            </div>
                                             <div class="col-md-12 mb-2">
                                                 <label for="validationCustom04" class="form-label required mb-0">Headquarter</label>
                                                 <textarea rows="1" name="textarea_input" name="headquarter" class="form-control form-control-sm form-control-solid"></textarea>
                                                 <div class="invalid-feedback"> Please provide a Headquarter. </div>
                                             </div>
 
+
+
+                                            <div class="col-md-12 mb-2">
+                                                <label for="validationCustom04" class="form-label required mb-0">Mission</label>
+                                                <textarea  name="mission"  class="tox-target kt_docs_tinymce_plugins">
+                                                    <h1>Quick and Simple TinyMCE 5 Integration</h1>
+                                                    <p>Here goes the&nbsp;<a href="#">Minitial content of the editor</a>. Lorem Ipsum is simply dummy text of the&nbsp;<em>printing and typesetting</em>&nbsp;industry.</p>
+                                                    <blockquote>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+                                                    <h3 style="text-align: right;">Flexible &amp; Powerful</h3>
+                                                    <p style="text-align: right;"><strong>Lorem Ipsum has been the industry's</strong>&nbsp;standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                                                    <ul>
+                                                        <li>List item 1</li>
+                                                        <li>List item 2</li>
+                                                        <li>List item 3</li>
+                                                        <li>List item 4</li>
+                                                    </ul>
+                                                </textarea>
+                                                <div class="invalid-feedback"> Please provide a Year Founded. </div>
+                                            </div>
+
+                                            <div class="col-md-12 mb-2">
+                                                <label for="validationCustom04" class="form-label required mb-0">Vision</label>
+                                                <textarea  name="textarea_input" class="tox-target kt_docs_tinymce_plugins">
+                                                    <h1>Quick and Simple TinyMCE 5 Integration</h1>
+                                                    <p>Here goes the&nbsp;<a href="#">Minitial content of the editor</a>. Lorem Ipsum is simply dummy text of the&nbsp;<em>printing and typesetting</em>&nbsp;industry.</p>
+                                                    <blockquote>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+                                                    <h3 style="text-align: right;">Flexible &amp; Powerful</h3>
+                                                    <p style="text-align: right;"><strong>Lorem Ipsum has been the industry's</strong>&nbsp;standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                                                    <ul>
+                                                        <li>List item 1</li>
+                                                        <li>List item 2</li>
+                                                        <li>List item 3</li>
+                                                        <li>List item 4</li>
+                                                    </ul>
+                                                </textarea>
+                                                <div class="invalid-feedback"> Please provide a Vision. </div>
+                                            </div>
+
+                                            <div class="col-md-12 mb-2">
+                                                <label for="validationCustom04" class="form-label required mb-0">History</label>
+                                                <textarea name="history" class="tox-target kt_docs_tinymce_plugins">
+                                                    <h1>Quick and Simple TinyMCE 5 Integration</h1>
+                                                    <p>Here goes the&nbsp;<a href="#">Minitial content of the editor</a>. Lorem Ipsum is simply dummy text of the&nbsp;<em>printing and typesetting</em>&nbsp;industry.</p>
+                                                    <blockquote>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+                                                    <h3 style="text-align: right;">Flexible &amp; Powerful</h3>
+                                                    <p style="text-align: right;"><strong>Lorem Ipsum has been the industry's</strong>&nbsp;standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                                                    <ul>
+                                                        <li>List item 1</li>
+                                                        <li>List item 2</li>
+                                                        <li>List item 3</li>
+                                                        <li>List item 4</li>
+                                                    </ul>
+                                                </textarea>
+                                                <div class="invalid-feedback"> Please provide a History. </div>
+                                            </div>
+
+                                            <div class="col-md-12 mb-2">
+                                                <label for="validationCustom04" class="form-label required mb-0">About</label>
+                                                <textarea name="textarea_input" class="tox-target kt_docs_tinymce_plugins">
+                                                    <h1>Quick and Simple TinyMCE 5 Integration</h1>
+                                                    <p>Here goes the&nbsp;<a href="#">Minitial content of the editor</a>. Lorem Ipsum is simply dummy text of the&nbsp;<em>printing and typesetting</em>&nbsp;industry.</p>
+                                                    <blockquote>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+                                                    <h3 style="text-align: right;">Flexible &amp; Powerful</h3>
+                                                    <p style="text-align: right;"><strong>Lorem Ipsum has been the industry's</strong>&nbsp;standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                                                    <ul>
+                                                        <li>List item 1</li>
+                                                        <li>List item 2</li>
+                                                        <li>List item 3</li>
+                                                        <li>List item 4</li>
+                                                    </ul>
+                                                </textarea>
+                                                <div class="invalid-feedback"> Please provide a About. </div>
+                                            </div>
+
+
+
+
+
+
+
+                                            
                                             <div class="col-lg-12 mt-5">
                                                 <div class="d-flex justify-content-end">
                                                     <button type="submit"
