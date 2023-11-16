@@ -29,6 +29,7 @@ use App\Http\Controllers\Admin\TermsAndPoliciesController;
 use App\Http\Controllers\Admin\LeaveApplicationsController;
 use App\Http\Controllers\Admin\EmployeeDepartmentController;
 use App\Http\Controllers\Admin\PolicyAcknowledgmentsController;
+use App\Http\Controllers\Admin\RowsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,6 +98,7 @@ Route::prefix('administrator')->group(static function () {
             'hr-policie'           =>   HrPoliciesController::class,
             'policy-acknowledgment'=>   PolicyAcknowledgmentsController::class,
             'terms-policies'       =>   TermsAndPoliciesController::class,
+            'rows'                 =>   RowsController::class,
 
 
 
