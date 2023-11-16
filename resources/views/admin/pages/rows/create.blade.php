@@ -103,7 +103,12 @@
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="submit" class="btn btn-sm btn-light-primary rounded-0 mt-3">Submit</button>
+                                                    <button type="submit" id="common_submit" class="btn btn-lg common-btn-3 fw-bolder me-4 w-175px mb-5">
+                                    <span class="indicator-label">Submit</span>
+                                    <span class="indicator-progress">Please wait...
+                                        <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                    </span>
+                                </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -211,7 +216,12 @@
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="submit" class="btn btn-sm btn-light-primary rounded-0 mt-3">Submit</button>
+                                                    <button type="submit" id="common_submit" class="btn btn-lg common-btn-3 fw-bolder me-4 w-175px mb-5">
+                                    <span class="indicator-label">Submit</span>
+                                    <span class="indicator-progress">Please wait...
+                                        <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                    </span>
+                                </button>
                                                 </div>
                                             </div>
                                         </div>
