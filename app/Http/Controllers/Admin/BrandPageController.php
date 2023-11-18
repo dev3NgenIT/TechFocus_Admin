@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProductTwoController extends Controller
+class BrandPageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ProductTwoController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.product-two.index');
+        return view('admin.pages.brandPage.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class ProductTwoController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.product-two.create');
+        return view('admin.pages.brandPage.create');
     }
 
     /**

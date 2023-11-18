@@ -1,10 +1,12 @@
 <?php
 
+use App\Models\Admin\BrandPage;
 use App\Models\Admin\ProductTwo;
 use Illuminate\Support\Facades\Route;
 use App\Models\Admin\LeaveApplications;
 use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\SeoController;
+use App\Http\Controllers\Admin\RowsController;
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\SmtpsController;
 use App\Http\Controllers\Admin\StepsController;
@@ -15,12 +17,14 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\IndustryController;
 use App\Http\Controllers\Admin\AddressesController;
 use App\Http\Controllers\Admin\AttributeController;
+use App\Http\Controllers\Admin\BrandPageController;
 use App\Http\Controllers\Admin\CompaniesController;
 use App\Http\Controllers\Admin\VatAndTaxController;
 use App\Http\Controllers\Admin\HrPoliciesController;
 use App\Http\Controllers\Admin\NewsTrendsController;
 use App\Http\Controllers\Admin\ProductTwoController;
 use App\Http\Controllers\KPI\ManagementKpiController;
+use App\Http\Controllers\Admin\SolutionCardsController;
 use App\Http\Controllers\Admin\DynamicCategorieController;
 use App\Http\Controllers\Admin\EmployeeCategoryController;
 use App\Http\Controllers\Admin\SalesTeamTargetsController;
@@ -29,7 +33,6 @@ use App\Http\Controllers\Admin\TermsAndPoliciesController;
 use App\Http\Controllers\Admin\LeaveApplicationsController;
 use App\Http\Controllers\Admin\EmployeeDepartmentController;
 use App\Http\Controllers\Admin\PolicyAcknowledgmentsController;
-use App\Http\Controllers\Admin\RowsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,7 +81,7 @@ Route::prefix('administrator')->group(static function () {
             'attribute'            =>   AttributeController::class,
             'colors'               =>   ColorsController::class,
             'smtps'                =>   SmtpsController::class,
-            'products'             =>   StepsController::class,
+            'products'             =>   ProductTwoController::class,
             'industry'             =>   IndustryController::class,
             'product-two'          =>   ProductTwoController::class,
             'companies'            =>   CompaniesController::class,
@@ -99,6 +102,8 @@ Route::prefix('administrator')->group(static function () {
             'policy-acknowledgment'=>   PolicyAcknowledgmentsController::class,
             'terms-policies'       =>   TermsAndPoliciesController::class,
             'rows'                 =>   RowsController::class,
+            'solution-card'        =>   SolutionCardsController::class,
+            'brand-page'           =>   BrandPageController::class,
 
 
 

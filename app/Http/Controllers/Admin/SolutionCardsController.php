@@ -14,7 +14,7 @@ class SolutionCardsController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.solutionCards.index');
     }
 
     /**

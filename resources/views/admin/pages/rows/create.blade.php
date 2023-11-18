@@ -104,18 +104,17 @@
                                             <div class="col-lg-12">
                                                 <div class="d-flex justify-content-end">
                                                     <button type="submit" id="common_submit" class="btn btn-lg common-btn-3 fw-bolder me-4 w-175px mb-5">
-                                    <span class="indicator-label">Submit</span>
-                                    <span class="indicator-progress">Please wait...
-                                        <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
-                                    </span>
-                                </button>
+                                                        <span class="indicator-label">Submit</span>
+                                                        <span class="indicator-progress">Please wait...
+                                                            <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                        </span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                
                             <div class="tab-pane fade" id="row-with-list" role="tabpanel">
                                 <form action="" class="needs-validation" method="post" novalidate>
                                     @csrf
