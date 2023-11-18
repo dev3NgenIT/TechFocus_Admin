@@ -145,7 +145,9 @@
                                                 </h2>
                                             </div>
                                             <div class="fv-row">
-                                                asdasdasdasdasd
+                                                <div class="row">
+                                                    <div class="col-lg-6"></div>
+                                                </div>
                                                 <div class="row mt-2 justify-content-end">
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <a class="btn btn-lg btn-info rounded-0 tab-trigger-previous"
