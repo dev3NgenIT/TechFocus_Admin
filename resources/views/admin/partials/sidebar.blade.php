@@ -335,6 +335,26 @@
                             </a>
                         </div>
                     </div>
+                    <div class="menu-sub menu-sub-accordion">
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{ route('industry-page.index') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">Industy Page</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-sub menu-sub-accordion">
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{ route('solution-details.index') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">Solution Details</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
             </div>

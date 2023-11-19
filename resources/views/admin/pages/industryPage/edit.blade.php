@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-sm-12 d-flex justify-content-end">
-                        <h4 class="text-white p-0 m-0 fw-bold">Brand Page Add</h4>
+                        <h4 class="text-white p-0 m-0 fw-bold">Brand Page Edit</h4>
                     </div>
                 </div>
                 <div class="card-body p-0 pt-1">
@@ -82,7 +82,7 @@
                                                             <label class="form-label required">Select Brand</label>
                                                             <select class="form-select form-select-solid form-select-sm"
                                                                 name="brand_id" data-control="select2"
-                                                                data-hide-search="false"
+                                                                data-hide-search="true"
                                                                 data-placeholder="Select an Product Type"
                                                                 data-allow-clear="true" required>
                                                                 <option></option>
@@ -146,23 +146,7 @@
                                             </div>
                                             <div class="fv-row">
                                                 <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="fv-row mb-3">
-                                                            <label class="form-label required">Row One Title</label>
-                                                            <input name="row_six_title"
-                                                                class="form-control form-control-sm form-control-solid"
-                                                                placeholder="Enter Row One Title" type="text" required />
-                                                            <div class="invalid-feedback"> Please Enter Row One Title.</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="fv-row mb-3">
-                                                            <label class="form-label required">Row One Header</label>
-                                                            <textarea rows="1" name="row_six_header" class="form-control form-control-sm form-control-solid"
-                                                            placeholder="Enter Row One Header" required></textarea>
-                                                            <div class="invalid-feedback"> Please Enter Row One Header.</div>
-                                                        </div>
-                                                    </div>
+                                                    <div class="col-lg-6"></div>
                                                 </div>
                                                 <div class="row mt-2 justify-content-end">
                                                     <div class="d-flex align-items-center justify-content-between">
@@ -402,43 +386,44 @@
                                                             <p class="badge badge-info custom-badge" style="margin-top: -15px; width: 11%">Card One</span>
                                                             <div class="col-lg-12 col-sm-12">
                                                                 <div class="row">
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Title
-                                                                        </label>
-                                                                        <input type="text" class="form-control form-control-solid form-control-sm"
-                                                                            name="title" id="validationCustom01" placeholder="Enter Title" required>
-                                                                        <div class="invalid-feedback"> Please Enter Title </div>
-                                                                    </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Image
-                                                                        </label>
-                                                                        <input type="file" class="form-control form-control-solid form-control-sm"
-                                                                            name="image" id="validationCustom01" placeholder="Enter Image" required>
-                                                                        <div class="invalid-feedback"> Please Enter Image </div>
-                                                                    </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Button Name
-                                                                        </label>
-                                                                        <input type="text" class="form-control form-control-solid form-control-sm"
-                                                                            name="button_name" id="validationCustom01" placeholder="Enter Button Name"
-                                                                            required>
-                                                                        <div class="invalid-feedback"> Please Enter Button Name </div>
-                                                                    </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Link
-                                                                        </label>
-                                                                        <textarea rows="1" name="link" class="form-control form-control-sm form-control-solid"
-                                                                            placeholder="Enter Link" required></textarea>
-                                                                        <div class="invalid-feedback"> Please Enter Link </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Short Des</label>
-                                                                        <textarea name="acceshort_desssories" class="tox-target kt_docs_tinymce_plugins">
-                                                                            <h1>Enter Your Text Here</h1>
-                                                                         </textarea>
-                                                                        <div class="invalid-feedback"> Please Enter Short Des </div>
-                                                                    </div>
-                                                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Title
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                        name="title" id="validationCustom01" placeholder="Enter Title" required>
+                                    <div class="invalid-feedback"> Please Enter Title </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Image
+                                    </label>
+                                    <input type="file" class="form-control form-control-solid form-control-sm"
+                                        name="image" id="validationCustom01" placeholder="Enter Image" required>
+                                    <div class="invalid-feedback"> Please Enter Image </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Button Name
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                        name="button_name" id="validationCustom01" placeholder="Enter Button Name"
+                                        required>
+                                    <div class="invalid-feedback"> Please Enter Button Name </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Link
+                                    </label>
+                                    <textarea rows="1" name="link" class="form-control form-control-sm form-control-solid"
+                                        placeholder="Enter Link" required></textarea>
+                                    <div class="invalid-feedback"> Please Enter Link </div>
+                                </div>
+                                <div class="col-md-12 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Short Des</label>
+                                    <textarea name="acceshort_desssories" class="tox-target kt_docs_tinymce_plugins">
+                                                            <h1>Enter Your Text Here</h1>
+                                                            
+                                                        </textarea>
+                                    <div class="invalid-feedback"> Please Enter Short Des </div>
+                                </div>
+                            </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -447,43 +432,44 @@
                                                             <p class="badge badge-info custom-badge" style="margin-top: -15px; width: 11%">Card Two</span>
                                                             <div class="col-lg-12 col-sm-12">
                                                                 <div class="row">
-                                                            <div class="col-md-6 mb-2">
-                                                                <label for="validationCustom01" class="form-label required mb-0">Title
-                                                                </label>
-                                                                <input type="text" class="form-control form-control-solid form-control-sm"
-                                                                    name="title" id="validationCustom01" placeholder="Enter Title" required>
-                                                                <div class="invalid-feedback"> Please Enter Title </div>
-                                                            </div>
-                                                            <div class="col-md-6 mb-2">
-                                                                <label for="validationCustom01" class="form-label required mb-0">Image
-                                                                </label>
-                                                                <input type="file" class="form-control form-control-solid form-control-sm"
-                                                                    name="image" id="validationCustom01" placeholder="Enter Image" required>
-                                                                <div class="invalid-feedback"> Please Enter Image </div>
-                                                            </div>
-                                                            <div class="col-md-6 mb-2">
-                                                                <label for="validationCustom01" class="form-label required mb-0">Button Name
-                                                                </label>
-                                                                <input type="text" class="form-control form-control-solid form-control-sm"
-                                                                    name="button_name" id="validationCustom01" placeholder="Enter Button Name"
-                                                                    required>
-                                                                <div class="invalid-feedback"> Please Enter Button Name </div>
-                                                            </div>
-                                                            <div class="col-md-6 mb-2">
-                                                                <label for="validationCustom01" class="form-label required mb-0">Link
-                                                                </label>
-                                                                <textarea rows="1" name="link" class="form-control form-control-sm form-control-solid"
-                                                                    placeholder="Enter Link" required></textarea>
-                                                                <div class="invalid-feedback"> Please Enter Link </div>
-                                                            </div>
-                                                            <div class="col-md-12 mb-2">
-                                                                <label for="validationCustom01" class="form-label required mb-0">Short Des</label>
-                                                                <textarea name="acceshort_desssories" class="tox-target kt_docs_tinymce_plugins">
-                                                                <h1>Enter Your Text Here</h1>
-                                                                </textarea>
-                                                                <div class="invalid-feedback"> Please Enter Short Des </div>
-                                                                </div>
-                                                            </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Title
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                        name="title" id="validationCustom01" placeholder="Enter Title" required>
+                                    <div class="invalid-feedback"> Please Enter Title </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Image
+                                    </label>
+                                    <input type="file" class="form-control form-control-solid form-control-sm"
+                                        name="image" id="validationCustom01" placeholder="Enter Image" required>
+                                    <div class="invalid-feedback"> Please Enter Image </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Button Name
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                        name="button_name" id="validationCustom01" placeholder="Enter Button Name"
+                                        required>
+                                    <div class="invalid-feedback"> Please Enter Button Name </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Link
+                                    </label>
+                                    <textarea rows="1" name="link" class="form-control form-control-sm form-control-solid"
+                                        placeholder="Enter Link" required></textarea>
+                                    <div class="invalid-feedback"> Please Enter Link </div>
+                                </div>
+                                <div class="col-md-12 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Short Des</label>
+                                    <textarea name="acceshort_desssories" class="tox-target kt_docs_tinymce_plugins">
+                                                            <h1>Enter Your Text Here</h1>
+                                                            
+                                                        </textarea>
+                                    <div class="invalid-feedback"> Please Enter Short Des </div>
+                                </div>
+                            </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -492,43 +478,44 @@
                                                             <p class="badge badge-info custom-badge" style="margin-top: -15px; width: 12%">Card Three</span>
                                                             <div class="col-lg-12 col-sm-12">
                                                                 <div class="row">
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Title
-                                                                        </label>
-                                                                        <input type="text" class="form-control form-control-solid form-control-sm"
-                                                                            name="title" id="validationCustom01" placeholder="Enter Title" required>
-                                                                        <div class="invalid-feedback"> Please Enter Title </div>
-                                                                    </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Image
-                                                                        </label>
-                                                                        <input type="file" class="form-control form-control-solid form-control-sm"
-                                                                            name="image" id="validationCustom01" placeholder="Enter Image" required>
-                                                                        <div class="invalid-feedback"> Please Enter Image </div>
-                                                                    </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Button Name
-                                                                        </label>
-                                                                        <input type="text" class="form-control form-control-solid form-control-sm"
-                                                                            name="button_name" id="validationCustom01" placeholder="Enter Button Name"
-                                                                            required>
-                                                                        <div class="invalid-feedback"> Please Enter Button Name </div>
-                                                                    </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Link
-                                                                        </label>
-                                                                        <textarea rows="1" name="link" class="form-control form-control-sm form-control-solid"
-                                                                            placeholder="Enter Link" required></textarea>
-                                                                        <div class="invalid-feedback"> Please Enter Link </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 mb-2">
-                                                                        <label for="validationCustom01" class="form-label required mb-0">Short Des</label>
-                                                                        <textarea name="acceshort_desssories" class="tox-target kt_docs_tinymce_plugins">
-                                                                            <h1>Enter Your Text Here</h1>
-                                                                        </textarea>
-                                                                        <div class="invalid-feedback"> Please Enter Short Des </div>
-                                                                    </div>
-                                                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Title
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                        name="title" id="validationCustom01" placeholder="Enter Title" required>
+                                    <div class="invalid-feedback"> Please Enter Title </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Image
+                                    </label>
+                                    <input type="file" class="form-control form-control-solid form-control-sm"
+                                        name="image" id="validationCustom01" placeholder="Enter Image" required>
+                                    <div class="invalid-feedback"> Please Enter Image </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Button Name
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid form-control-sm"
+                                        name="button_name" id="validationCustom01" placeholder="Enter Button Name"
+                                        required>
+                                    <div class="invalid-feedback"> Please Enter Button Name </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Link
+                                    </label>
+                                    <textarea rows="1" name="link" class="form-control form-control-sm form-control-solid"
+                                        placeholder="Enter Link" required></textarea>
+                                    <div class="invalid-feedback"> Please Enter Link </div>
+                                </div>
+                                <div class="col-md-12 mb-2">
+                                    <label for="validationCustom01" class="form-label required mb-0">Short Des</label>
+                                    <textarea name="acceshort_desssories" class="tox-target kt_docs_tinymce_plugins">
+                                                            <h1>Enter Your Text Here</h1>
+                                                            
+                                                        </textarea>
+                                    <div class="invalid-feedback"> Please Enter Short Des </div>
+                                </div>
+                            </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -566,16 +553,7 @@
                                                 </h2>
                                             </div>
                                             <div class="fv-row">
-                                                <div class="row">
-                                                    <div class="col-md-12 mb-2">
-                                                        <label for="validationCustom01" class="form-label required mb-0">Row Four Background Img
-                                                        </label>
-                                                        <input type="file" class="form-control form-control-solid form-control-sm"
-                                                            name="row_six_image" id="validationCustom01" placeholder="Enter Row Four Background Img"
-                                                            required>
-                                                        <div class="invalid-feedback"> Please Enter Row Four Background Img </div>
-                                                    </div>
-                                                </div>
+                                                asdasdasdas
                                                 <div class="row mt-2 justify-content-end">
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <a class="btn btn-lg btn-info rounded-0 tab-trigger-previous"

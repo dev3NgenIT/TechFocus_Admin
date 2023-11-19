@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-sm-12 d-flex justify-content-end">
-                        <h4 class="text-white p-0 m-0 fw-bold">Brand Page Add</h4>
+                        <h4 class="text-white p-0 m-0 fw-bold">Brand Page</h4>
                     </div>
                 </div>
                 <div class="card-body p-0 pt-1">

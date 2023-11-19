@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-sm-12 d-flex justify-content-end">
-                        <h4 class="text-white p-0 m-0 fw-bold">Brand Page Add</h4>
+                        <h4 class="text-white p-0 m-0 fw-bold">Solution Details Add</h4>
                     </div>
                 </div>
                 <div class="card-body p-0 pt-1">
@@ -80,7 +80,7 @@
                                                     <div class="col-lg-6 mb-3">
                                                         <div class="fv-row mb-3">
                                                             <label class="form-label required">Select Brand</label>
-                                                            <select class="form-select form-select-solid form-select-sm"
+                                                            {{-- <select class="form-select form-select-solid form-select-sm"
                                                                 name="brand_id" data-control="select2"
                                                                 data-hide-search="false"
                                                                 data-placeholder="Select an Product Type"
@@ -90,7 +90,15 @@
                                                                 <option value="hardware">Hardware</option>
                                                                 <option value="book">Book</option>
                                                                 <option value="training">Training</option>
-                                                            </select>
+                                                            </select> --}}
+                                                            <select id="multiple-checkboxes" multiple="multiple">
+                                                                <option value="php">PHP</option>
+                                                                <option value="javascript">JavaScript</option>
+                                                                <option value="java">Java</option>
+                                                                <option value="sql">SQL</option>
+                                                                <option value="jquery">Jquery</option>
+                                                                <option value=".net">.Net</option>
+                                                                </select>
                                                             <div class="invalid-feedback"> Please Enter Product Name.</div>
                                                         </div>
                                                     </div>
@@ -1073,5 +1081,18 @@
                 validateAndSwitchTab(targetTabId);
             });
         });
+    </script>
+    <script>
+        (function($) {
+  "use strict";
+
+  $(document).ready(function() {
+      $('#multiple-checkboxes').multiselect({
+          includeSelectAllOption: true,
+          enableFiltering: true, // Add this line to enable search/filtering
+      });
+  });
+
+})(jQuery);
     </script>
 @endpush

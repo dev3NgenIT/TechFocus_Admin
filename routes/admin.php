@@ -2,6 +2,7 @@
 
 use App\Models\Admin\BrandPage;
 use App\Models\Admin\ProductTwo;
+use App\Models\Admin\IndustryPages;
 use Illuminate\Support\Facades\Route;
 use App\Models\Admin\LeaveApplications;
 use App\Http\Controllers\Admin\FAQController;
@@ -24,7 +25,9 @@ use App\Http\Controllers\Admin\HrPoliciesController;
 use App\Http\Controllers\Admin\NewsTrendsController;
 use App\Http\Controllers\Admin\ProductTwoController;
 use App\Http\Controllers\KPI\ManagementKpiController;
+use App\Http\Controllers\Admin\IndustryPageController;
 use App\Http\Controllers\Admin\SolutionCardsController;
+use App\Http\Controllers\Admin\SolutionDetailsController;
 use App\Http\Controllers\Admin\DynamicCategorieController;
 use App\Http\Controllers\Admin\EmployeeCategoryController;
 use App\Http\Controllers\Admin\SalesTeamTargetsController;
@@ -104,6 +107,8 @@ Route::prefix('administrator')->group(static function () {
             'rows'                 =>   RowsController::class,
             'solution-card'        =>   SolutionCardsController::class,
             'brand-page'           =>   BrandPageController::class,
+            'industry-page'        =>   IndustryPageController::class,
+            'solution-details'     =>   SolutionDetailsController::class,
 
 
 

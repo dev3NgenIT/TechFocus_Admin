@@ -18,10 +18,12 @@
 <script src="{{ asset('backend/assets/js/custom/utilities/modals/create-app.js') }}"></script>
 <script src="{{ asset('backend/assets/js/custom/utilities/modals/users-search.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script src="{{ asset('backend/assets/js/custom.js') }}"></script>
+<script src="{{ asset('backend/assets/js/boot-multi.js') }}"></script>
 <script src="{{ asset('backend/assets/plugins/custom/tinymce/tinymce.bundle.js') }}"></script>
 <script src="{{ asset('backend/assets/js/custom/documentation/editors/tinymce/plugins.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.8/js/fileinput.min.js"></script>
+<script src="{{ asset('backend/assets/js/custom.js') }}"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"828601deb871bc2d","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
 {{-- <script src="https://kit.fontawesome.com/69b7156a94.js" crossorigin="anonymous"></script> --}}
 <!--end::Page Custom Javascript-->
 <script>

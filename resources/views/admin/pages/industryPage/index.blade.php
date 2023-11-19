@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-center text-sm-center">
                                     <div class="card-title table_title">
-                                        <h2 class="text-center">Brand Page</h2>
+                                        <h2 class="text-center">Industry Page</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12 text-lg-end text-sm-center">
@@ -39,7 +39,7 @@
                                         {{-- <span class="svg-icon svg-icon-1 position-absolute ms-4"></span> --}}
                                         Export Report
                                     </button>
-                                    <a href="{{ route('brand-page.create') }}" type="button" class="btn btn-sm btn-light-success rounded-0">
+                                    <a href="{{ route('industry-page.create') }}" type="button" class="btn btn-sm btn-light-success rounded-0">
                                         Add New
                                     </a>
                                     <div id="kt_datatable_example_1_export_menu"
@@ -104,7 +104,7 @@
                                             data-bs-toggle="modal" data-bs-target="#TermsPoliciesViewModal">
                                             <i class="fa-solid fa-expand"></i>
                                         </a>
-                                        <a href="{{ route('brand-page.create') }}"
+                                        <a href="{{ route('industry-page.create') }}"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
                                             data-bs-toggle="modal" data-bs-target="#TermsPoliciesEditModal">
                                             <i class="fa-solid fa-pen"></i>
@@ -137,7 +137,7 @@
                                             data-bs-toggle="modal" data-bs-target="#TermsPoliciesViewModal">
                                             <i class="fa-solid fa-expand"></i>
                                         </a>
-                                        <a href="{{ route('brand-page.create') }}"
+                                        <a href="{{ route('industry-page.create') }}"
                                             class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"
                                             data-bs-toggle="modal" data-bs-target="#TermsPoliciesEditModal">
                                             <i class="fa-solid fa-pen"></i>
@@ -161,7 +161,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0 border-0 shadow-sm">
                 <div class="modal-header p-2 rounded-0">
-                    <h5 class="modal-title ps-5">View Brand Page</h5>
+                    <h5 class="modal-title ps-5">View Industy Page</h5>
                     <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                         aria-label="Close">
                         <i class="fa-solid fa-circle-xmark"></i>
