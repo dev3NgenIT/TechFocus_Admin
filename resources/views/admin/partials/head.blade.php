@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="https://cdn.rawgit.com/davidstutz/bootstrap-multiselect/v0.9.15/dist/css/bootstrap-multiselect.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.8/css/fileinput.min.css">
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-multiselect@0.9.16/dist/css/bootstrap-multiselect.min.css">
 <!--end::Global Stylesheets Bundle-->
 
 

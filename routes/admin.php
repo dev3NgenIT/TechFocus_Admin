@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Admin\BrandPage;
+use App\Models\Admin\ProductSas;
 use App\Models\Admin\ProductTwo;
 use App\Models\Admin\IndustryPages;
 use Illuminate\Support\Facades\Route;
@@ -8,6 +9,7 @@ use App\Models\Admin\LeaveApplications;
 use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\SeoController;
 use App\Http\Controllers\Admin\RowsController;
+use App\Http\Controllers\Admin\TestController;
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\SmtpsController;
 use App\Http\Controllers\Admin\StepsController;
@@ -15,6 +17,7 @@ use App\Http\Controllers\Admin\ColorsController;
 use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Admin\BankingsController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\IndustryController;
 use App\Http\Controllers\Admin\AddressesController;
 use App\Http\Controllers\Admin\AttributeController;
@@ -23,6 +26,7 @@ use App\Http\Controllers\Admin\CompaniesController;
 use App\Http\Controllers\Admin\VatAndTaxController;
 use App\Http\Controllers\Admin\HrPoliciesController;
 use App\Http\Controllers\Admin\NewsTrendsController;
+use App\Http\Controllers\Admin\ProductSasController;
 use App\Http\Controllers\Admin\ProductTwoController;
 use App\Http\Controllers\KPI\ManagementKpiController;
 use App\Http\Controllers\Admin\IndustryPageController;
@@ -109,16 +113,9 @@ Route::prefix('administrator')->group(static function () {
             'brand-page'           =>   BrandPageController::class,
             'industry-page'        =>   IndustryPageController::class,
             'solution-details'     =>   SolutionDetailsController::class,
-
-
-
-
-
-
-
-
-
-
+            'test'                 =>   TestController::class,
+            'product-sas'          =>   ProductSasController::class,
+            'employee'             =>   EmployeeController::class,
 
         ]);
     });
