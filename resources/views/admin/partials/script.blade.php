@@ -24,7 +24,10 @@
 <script src="{{ asset('backend/assets/js/custom/documentation/editors/tinymce/plugins.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.8/js/fileinput.min.js"></script>
 <script src="{{ asset('backend/assets/js/custom.js') }}"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"828601deb871bc2d","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+    integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+    data-cf-beacon='{"rayId":"828601deb871bc2d","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+    crossorigin="anonymous"></script>
 {{-- <script src="https://kit.fontawesome.com/69b7156a94.js" crossorigin="anonymous"></script> --}}
 <!--end::Page Custom Javascript-->
 <script>
@@ -449,6 +452,9 @@
 </script>
 
 
+
+{{-- Product Sass Start Here --}}
+
 <!-- Add this script after your HTML table -->
 <script>
     // Function to calculate and update the total value
@@ -464,6 +470,8 @@
         var managementCostValue = parseFloat(document.querySelector('.management_cost-value').value) || 0;
         var taxValue = parseFloat(document.querySelector('.tax-value').value) || 0;
         var shippingCostValue = parseFloat(document.querySelector('.shiping_cost-value').value) || 0;
+        var regularDiscountsValue = parseFloat(document.querySelector('.regular_discounts-value').value) || 0;
+        var rebatesValue = parseFloat(document.querySelector('.rebates-value').value) || 0;
 
         // Calculate the total value based on the provided formula
         var totalValue = cogPriceValue + (cogPriceValue * (
@@ -475,6 +483,8 @@
             capitalShareValue +
             managementCostValue +
             taxValue +
+            regularDiscountsValue +
+            rebatesValue+
             (shippingCostValue / 100)
         ) / 100);
 
@@ -483,7 +493,7 @@
     }
 
     // Attach the function to the input fields' onchange event
-    document.querySelectorAll('.form-control-outline').forEach(function (input) {
+    document.querySelectorAll('.form-control-outline').forEach(function(input) {
         input.addEventListener('change', calculateAndUpdateTotal);
     });
 </script>
@@ -500,19 +510,140 @@
         var managementCostValue = parseFloat(document.querySelector('.management_cost-value').value) || 0;
         var taxValue = parseFloat(document.querySelector('.tax-value').value) || 0;
         var shippingCostValue = parseFloat(document.querySelector('.shiping_cost-value').value) || 0;
+        var regularDiscountsValue = parseFloat(document.querySelector('.regular_discounts-value').value) || 0;
+        var rebatesValue = parseFloat(document.querySelector('.rebates-value').value) || 0;
 
         // Calculate the total value for the specified items
         var totalValue = bankChargeValue + customsValue + utilityCostValue + salesComissionValue +
-            liabilityValue + capitalShareValue + managementCostValue + taxValue + shippingCostValue;
+            liabilityValue + capitalShareValue + managementCostValue + taxValue + shippingCostValue + regularDiscountsValue + rebatesValue;
 
         // Update the total value in the corresponding input field
         document.querySelector('input[name="gross-total"]').value = totalValue.toFixed(2);
     }
 
     // Attach the function to the input fields' onchange event
-    document.querySelectorAll('.form-control-outline').forEach(function (input) {
+    document.querySelectorAll('.form-control-outline').forEach(function(input) {
         input.addEventListener('change', calculateAndUpdateTotal);
     });
 </script>
+<script>
+    // Function to calculate and update the values for each corresponding field based on the formula
+    function calculateAndUpdateValues() {
+        // Get the input value for cog_price
+        var cogPrice = parseFloat(document.querySelector('input[name="cog_price"]').value) || 0;
 
+        // Get the percentage values for each field
+        var bankChargePercentage = parseFloat(document.querySelector('input[name="bank_charge"]').value) || 0;
+        var customsPercentage = parseFloat(document.querySelector('input[name="customs"]').value) || 0;
+        var utilityCostPercentage = parseFloat(document.querySelector('input[name="utility_cost"]').value) || 0;
+        var salesComissionPercentage = parseFloat(document.querySelector('input[name="sales_comission"]').value) || 0;
+        var liabilityPercentage = parseFloat(document.querySelector('input[name="liability"]').value) || 0;
+        var capitalSharePercentage = parseFloat(document.querySelector('input[name="capital_share"]').value) || 0;
+        var managementCostPercentage = parseFloat(document.querySelector('input[name="management_cost"]').value) || 0;
+        var taxPercentage = parseFloat(document.querySelector('input[name="tax"]').value) || 0;
+        var shipingCostPercentage = parseFloat(document.querySelector('input[name="shiping_cost"]').value) || 0;
+        var regularDiscountsPercentage = parseFloat(document.querySelector('input[name="regular_discounts"]').value) || 0;
+        var rebatesPercentage = parseFloat(document.querySelector('input[name="rebates"]').value) || 0;
+
+        // Calculate the values based on the formula
+        var bankChargeValue = cogPrice * (bankChargePercentage / 100);
+        var customsValue = cogPrice * (customsPercentage / 100);
+        var utilityCostValue = cogPrice * (utilityCostPercentage / 100);
+        var salesComissionValue = cogPrice * (salesComissionPercentage / 100);
+        var liabilityValue = cogPrice * (liabilityPercentage / 100);
+        var capitalShareValue = cogPrice * (capitalSharePercentage / 100);
+        var managementCostValue = cogPrice * (managementCostPercentage / 100);
+        var taxValue = cogPrice * (taxPercentage / 100);
+        var shipingCostValue = cogPrice * (shipingCostPercentage / 100);
+        var regularDiscountsValue = cogPrice * (regularDiscountsPercentage / 100);
+        var rebatesValue = cogPrice * (rebatesPercentage / 100);
+
+        // Show the calculated values in each corresponding field
+        document.querySelector('input[name="bank_charge-value"]').value = bankChargeValue.toFixed(2);
+        document.querySelector('input[name="customs-value"]').value = customsValue.toFixed(2);
+        document.querySelector('input[name="utility_cost-value"]').value = utilityCostValue.toFixed(2);
+        document.querySelector('input[name="sales_comission-value"]').value = salesComissionValue.toFixed(2);
+        document.querySelector('input[name="liability-value"]').value = liabilityValue.toFixed(2);
+        document.querySelector('input[name="capital_share-value"]').value = capitalShareValue.toFixed(2);
+        document.querySelector('input[name="management_cost-value"]').value = managementCostValue.toFixed(2);
+        document.querySelector('input[name="tax-value"]').value = taxValue.toFixed(2);
+        document.querySelector('input[name="shiping_cost-value"]').value = shipingCostValue.toFixed(2);
+        document.querySelector('input[name="regular_discounts-value"]').value = regularDiscountsValue.toFixed(2);
+        document.querySelector('input[name="rebates-value"]').value = rebatesValue.toFixed(2);
+    }
+
+    // Attach the function to the input event of each percentage field
+    document.querySelector('input[name="bank_charge"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="customs"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="utility_cost"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="sales_comission"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="liability"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="capital_share"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="management_cost"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="tax"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="shiping_cost"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="regular_discounts"]').addEventListener('input', calculateAndUpdateValues);
+    document.querySelector('input[name="rebates"]').addEventListener('input', calculateAndUpdateValues);
+</script>
+<script>
+    // Function to calculate and update gross percentage
+    function updateGrossPercentage() {
+        // Get values from input fields
+        var bankCharge = parseFloat(document.getElementsByName('bank_charge-value')[0].value) || 0;
+        var customs = parseFloat(document.getElementsByName('customs-value')[0].value) || 0;
+        var utilityCost = parseFloat(document.getElementsByName('utility_cost-value')[0].value) || 0;
+        var salesComission = parseFloat(document.getElementsByName('sales_comission-value')[0].value) || 0;
+        var liability = parseFloat(document.getElementsByName('liability-value')[0].value) || 0;
+        var capitalShare = parseFloat(document.getElementsByName('capital_share-value')[0].value) || 0;
+        var managementCost = parseFloat(document.getElementsByName('management_cost-value')[0].value) || 0;
+        var tax = parseFloat(document.getElementsByName('tax-value')[0].value) || 0;
+        var shipingCost = parseFloat(document.getElementsByName('shiping_cost-value')[0].value) || 0;
+        var regularDiscount = parseFloat(document.getElementsByName('regular_discounts-value')[0].value) || 0;
+        var rebate = parseFloat(document.getElementsByName('rebates-value')[0].value) || 0;
+
+        // Calculate the sum
+        var total = bankCharge + customs + utilityCost + salesComission + liability +
+            capitalShare + managementCost + tax + shipingCost + regularDiscount + rebate;
+
+        // Update the gross-percentage field
+        document.getElementsByName('gross-percentage')[0].value = total.toFixed(2);
+    }
+
+    // Attach the function to the input fields' input event
+    var inputFields = document.querySelectorAll(
+        '[name^="bank_charge"], [name^="customs"], [name^="utility_cost"], [name^="sales_comission"], [name^="liability"], [name^="capital_share"], [name^="management_cost"], [name^="tax"], [name^="shiping_cost"], [name^="regular_discounts"], [name^="rebates"]'
+        );
+    inputFields.forEach(function(inputField) {
+        inputField.addEventListener('input', updateGrossPercentage);
+        inputField.addEventListener('change', updateGrossPercentage);
+    });
+</script>
+
+
+<script>
+    // Function to update net profit and net profit percentage
+    function updateNetProfit() {
+        // Get values from management_cost and cog_price fields
+        var managementCost = parseFloat(document.getElementsByName('management_cost')[0].value) || 0;
+        var cogPrice = parseFloat(document.getElementsByName('cog_price')[0].value) || 0;
+
+        // Calculate (management_cost * cog_price / 100)
+        var netProfitPercentage = (managementCost * cogPrice) / 100;
+
+        // Update the net-profit-percentage field
+        document.getElementsByName('net-profit-percentage')[0].value = netProfitPercentage.toFixed(2);
+
+        // Set management_cost to be equal to net-profit
+        document.getElementsByName('net-profit')[0].value = netProfitPercentage.toFixed(2);
+    }
+
+    // Attach the function to the management_cost and cog_price fields' input events
+    var managementCostField = document.getElementsByName('management_cost')[0];
+    var cogPriceField = document.getElementsByName('cog_price')[0];
+
+    managementCostField.addEventListener('input', updateNetProfit);
+    cogPriceField.addEventListener('input', updateNetProfit);
+</script>
+
+{{-- Product Sass Start Here End --}}
 @stack('scripts')

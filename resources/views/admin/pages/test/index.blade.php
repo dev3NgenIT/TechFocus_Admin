@@ -1,5 +1,62 @@
 @extends('admin.master')
 @section('content')
+<style>
+    .img-thumb {
+        border: 2px solid none;
+        border-radius: 3px;
+        padding: 1px;
+        cursor: pointer;
+        width: 70px;
+        height: 60px;
+        border-radius: 0.475rem;
+    }
+
+    .img-thumb-wrapper {
+        display: inline-block;
+        margin: 0px 10px 0 0;
+    }
+
+    .remove {
+        display: block;
+        background: #cf054f;
+        border: 1px solid none;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+    .remove:hover {
+        background: white;
+        color: black;
+    }
+
+    .dropzone-field {
+        border: 1px dashed #009ef7;
+        display: flex;
+        flex-wrap: wrap; /* Allow multiple images in a row */
+        align-items: center;
+        border-radius: 4px;
+        padding: 10px 5px;
+        justify-content: center;
+    }
+
+    #files {
+        display: none;
+    }
+
+    .custom-file-upload {
+        border: 0px solid #ccc;
+        padding: 6px 12px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .custom-file-upload i {
+        margin-right: 5px;
+    }
+</style>
     <div class="container h-100">
         <div class="row">
             <div class="col-lg-12 card rounded-0 shadow-sm">
@@ -71,26 +128,58 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <div class="fv-row mb-3">
-                            <label class="form-label required">Select Brand</label>
-                            <select class="form-select form-select-solid" name="field2" id="field2" multiple
-                                multiselect-search="true" multiselect-select-all="true" multiselect-max-items="3"
-                                onchange="console.log(this.selectedOptions)">
-                                <option>Abarth</option>
-                                <option>Alfa Romeo</option>
-                                <option>Aston Martin</option>
-                                <option>Audi</option>
-                                <option>Bentley</option>
-                                <option>BMW</option>
-                                <option>Bugatti</option>
-                                <option>Cadillac</option>
-                            </select>
-                            <div class="invalid-feedback"> Please Enter Product Name.</div>
-                        </div>
+                    <div class="card-body mb-4">
+                        <form action="" method="" enctype="multipart/form-data">
+                            <h3>Upload images</h3>
+                            <div class="dropzone-field">
+                                <label for="files" class="custom-file-upload">
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0"><i class="bi bi-file-earmark-arrow-up text-primary fs-3x"></i></p>
+                                        <h5 class="mb-0">Drop files here or click to upload. <br>
+                                            <span class="text-muted" style="font-size: 10px">Upload 10 File</span>
+                                        </h5>
+                                    </div>
+                                </label>
+                                <input type="file" id="files" name="files[]" multiple class="form-control" style="display: none;" onchange="console.log(this.value)" />
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script>
+    $(document).ready(function() {
+        if (window.File && window.FileList && window.FileReader) {
+            $("#files").on("change", function(e) {
+                var files = e.target.files,
+                    filesLength = files.length;
+                for (var i = 0; i < filesLength; i++) {
+                    var f = files[i]
+                    var fileReader = new FileReader();
+                    fileReader.onload = (function(e) {
+                        var file = e.target;
+                        $("<div class=\"img-thumb-wrapper card shadow\">" +
+                            "<img class=\"img-thumb\" src=\"" + e.target.result +
+                            "\" title=\"" + file.name + "\"/>" +
+                            "<br/><span class=\"remove\">Remove</span>" +
+                            "</div>").insertAfter("#files");
+                        $(".remove").click(function() {
+                            $(this).parent(".img-thumb-wrapper").remove();
+                        });
+
+                    });
+                    fileReader.readAsDataURL(f);
+                }
+                console.log(files);
+            });
+        } else {
+            alert("Your browser doesn't support to File API")
+        }
+    });
+</script>
+
+@endpush

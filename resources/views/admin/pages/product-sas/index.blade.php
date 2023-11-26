@@ -78,7 +78,7 @@
                                                 <p class="m-0 p-0 me-2">Goods</p>
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="cog_price"
-                                                    id="validationCustom01" placeholder="E.g: 000.00Tk">
+                                                    id="validationCustom01" placeholder="E.g: 0.05%, 0.5%, 5%">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
@@ -86,7 +86,7 @@
                                                 <p class="m-0 p-0 me-2">Sales</p>
                                                 <input type="text"
                                                     class="form-control form-control-solid form-control-sm" name="sales-value"
-                                                    id="validationCustom01" placeholder="E.g: 000.00Tk" value="" disabled>
+                                                    id="validationCustom01" placeholder="E.g: 0.05%, 0.5%, 5%" value="" disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -130,7 +130,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm bank_charge-value"
                                                             name="bank_charge" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -138,7 +138,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="bank_charge-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -149,7 +149,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm customs-value"
                                                             name="customs" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" >
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" >
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -157,7 +157,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="customs-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -168,7 +168,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm utility_cost-value"
                                                             name="utility_cost" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" >
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" >
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -176,7 +176,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="utility_cost-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -187,7 +187,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm sales_comission-value"
                                                             name="sales_comission" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -195,7 +195,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="sales_comission-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -206,7 +206,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm liability-value"
                                                             name="liability" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -214,7 +214,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="liability-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -225,7 +225,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm capital_share-value"
                                                             name="capital_share" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -233,7 +233,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="capital_share-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -244,7 +244,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm management_cost-value"
                                                             name="management_cost" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -252,7 +252,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="management_cost-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -263,7 +263,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm tax-value"
                                                             name="tax" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -271,7 +271,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="tax-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -282,7 +282,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm shiping_cost-value"
                                                             name="shiping_cost" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -290,7 +290,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="shiping_cost-value" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disabled>
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%" disabled>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -308,17 +308,17 @@
                                                 <td class="p-1">
                                                     <div>
                                                         <input type="text"
-                                                            class="form-control form-control-outline form-control-sm "
+                                                            class="form-control form-control-outline form-control-sm regular_discounts"
                                                             name="regular_discounts" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
                                                     <div>
                                                         <input type="text"
-                                                            class="form-control form-control-solid form-control-sm"
-                                                            name="badge" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            class="form-control form-control-solid form-control-sm regular_discounts-value"
+                                                            name="regular_discounts-value" id="validationCustom01"
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -327,17 +327,17 @@
                                                 <td class="p-1">
                                                     <div>
                                                         <input type="text"
-                                                            class="form-control form-control-outline form-control-sm"
+                                                            class="form-control form-control-outline form-control-sm rebates"
                                                             name="rebates" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
                                                     <div>
                                                         <input type="text"
-                                                            class="form-control form-control-solid form-control-sm"
-                                                            name="badge" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            class="form-control form-control-solid form-control-sm rebates-value"
+                                                            name="rebates-value" id="validationCustom01"
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -355,7 +355,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm"
                                                             name="net-profit" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
@@ -363,7 +363,7 @@
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
                                                             name="net-profit-percentage" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -374,15 +374,17 @@
                                                         <input type="text"
                                                             class="form-control form-control-outline form-control-sm"
                                                             name="gross-total" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk">
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%">
                                                     </div>
                                                 </td>
                                                 <td class="p-1">
                                                     <div>
                                                         <input type="text"
                                                             class="form-control form-control-solid form-control-sm"
-                                                            name="gross-percentage" id="validationCustom01"
-                                                            placeholder="E.g: 000.00Tk" disable>
+                                                            name="gross-percentage"
+                                                            id="validationCustom01"
+                                                            placeholder="E.g: 0.05%, 0.5%, 5%"
+                                                            disabled>
                                                     </div>
                                                 </td>
                                             </tr>
