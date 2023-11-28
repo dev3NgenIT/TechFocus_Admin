@@ -22,6 +22,7 @@ use App\Http\Controllers\Admin\IndustryController;
 use App\Http\Controllers\Admin\AddressesController;
 use App\Http\Controllers\Admin\AttributeController;
 use App\Http\Controllers\Admin\BrandPageController;
+use App\Http\Controllers\Admin\CatalogueController;
 use App\Http\Controllers\Admin\CompaniesController;
 use App\Http\Controllers\Admin\VatAndTaxController;
 use App\Http\Controllers\Admin\HrPoliciesController;
@@ -116,6 +117,7 @@ Route::prefix('administrator')->group(static function () {
             'test'                 =>   TestController::class,
             'product-sas'          =>   ProductSasController::class,
             'employee'             =>   EmployeeController::class,
+            'catalogue'            =>   CatalogueController::class,
 
         ]);
     });
