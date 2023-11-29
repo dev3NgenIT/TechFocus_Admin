@@ -204,12 +204,10 @@
                                                                 <div class="row">
                                                                     <div class="col-md-3">
                                                                         <label class="form-label">Page Image</label>
-                                                                        {{-- <input name="page_image[]" type="file"
+                                                                        <input name="page_image" type="file"
                                                                             class="form-control form-control-sm form-control-solid"
                                                                             data-kt-repeater="page_image"
-                                                                            placeholder="Page Image" /> --}}
-
-                                                                            cust
+                                                                            placeholder="Page Image" />
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <label class="form-label">Page Link</label>
