@@ -3,9 +3,9 @@
     <div class="row">
         <div class="col-md-3">
             <label for="validationCustom04" class="form-label">Country Name</label>
-            <select class="form-select form-select-solid form-select-sm @error('country_id') is-invalid @enderror" name="country_id"
-                data-control="select2" data-hide-search="false" data-placeholder="Select an Product Type"
-                data-allow-clear="true">
+            <select class="form-select form-select-solid form-select-sm @error('country_id') is-invalid @enderror"
+                name="country_id" data-control="select2" data-hide-search="false"
+                data-placeholder="Select an Product Type" data-allow-clear="true">
                 <option></option>
                 <option value="1">Option 1</option>
                 <option value="1">Option 1</option>
@@ -17,9 +17,9 @@
         </div>
         <div class="col-md-3">
             <label for="validationCustom04" class="form-label">Company Name</label>
-            <select class="form-select form-select-solid form-select-sm @error('company_id') is-invalid @enderror" name="company_id"
-                data-dropdown-parent="#brandAddModal" data-control="select2" data-placeholder="Select an option"
-                data-allow-clear="true">
+            <select class="form-select form-select-solid form-select-sm @error('company_id') is-invalid @enderror"
+                name="company_id" data-dropdown-parent="#brandAddModal" data-control="select2"
+                data-placeholder="Select an option" data-allow-clear="true">
                 <option></option>
                 <option value="1">Option 1</option>
                 <option value="1">Option 1</option>
@@ -321,7 +321,7 @@
                 <label class="form-label">Fiver URL</label>
                 <input name="fiver_url"
                     class="form-control form-control-sm form-control-solid @error('fiver_url') is-invalid @enderror"
-                    placeholder="Enter fiver_url" type="text" />
+                    placeholder="Enter fiver URL" type="text" />
                 @error('fiver_url')
                     <div class="invalid-feedback"> {{ $message }}</div>
                 @enderror
@@ -329,10 +329,10 @@
         </div>
         <div class="col-lg-3">
             <div class="fv-row mb-3">
-                <label class="form-label">Upwork url</label>
+                <label class="form-label">Upwork URL</label>
                 <input name="upwork_url"
                     class="form-control form-control-sm form-control-solid @error('upwork_url') is-invalid @enderror"
-                    placeholder="Enter upwork_url" type="text" />
+                    placeholder="Enter upwork URL" type="text" />
                 @error('upwork_url')
                     <div class="invalid-feedback"> {{ $message }}</div>
                 @enderror
@@ -358,6 +358,16 @@
                 @error('service_time')
                     <div class="invalid-feedback"> {{ $message }}</div>
                 @enderror
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="d-flex justify-content-end">
+                <a class="btn btn-lg btn-info rounded-0">
+                    Continue
+                    <span class="svg-icon svg-icon-4 ms-1 me-0">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
             </div>
         </div>
     </div>
