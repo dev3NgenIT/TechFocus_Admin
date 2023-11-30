@@ -41,6 +41,7 @@ use App\Http\Controllers\Admin\TermsAndPoliciesController;
 use App\Http\Controllers\Admin\LeaveApplicationsController;
 use App\Http\Controllers\Admin\EmployeeDepartmentController;
 use App\Http\Controllers\Admin\PolicyAcknowledgmentsController;
+use App\Http\Controllers\Admin\WebSiteSettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -118,6 +119,7 @@ Route::prefix('administrator')->group(static function () {
             'product-sas'          =>   ProductSasController::class,
             'employee'             =>   EmployeeController::class,
             'catalogue'            =>   CatalogueController::class,
+            'website-setting'      =>   WebSiteSettingController::class,
 
         ]);
     });
