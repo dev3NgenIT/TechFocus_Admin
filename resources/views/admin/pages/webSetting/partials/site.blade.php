@@ -1,7 +1,7 @@
 <form action="#" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
             <label for="validationCustom04" class="form-label">Country Name</label>
             <select class="form-select form-select-solid form-select-sm @error('country_id') is-invalid @enderror" name="country_id"
                 data-control="select2" data-hide-search="false" data-placeholder="Select an Product Type"
@@ -15,7 +15,7 @@
                 <div class="invalid-feedback"> {{ $message }}</div>
             @enderror
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <label for="validationCustom04" class="form-label">Company Name</label>
             <select class="form-select form-select-solid form-select-sm @error('company_id') is-invalid @enderror" name="company_id"
                 data-dropdown-parent="#brandAddModal" data-control="select2" data-placeholder="Select an option"
@@ -29,9 +29,9 @@
                 <div class="invalid-feedback"> {{ $message }}</div>
             @enderror
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
-                <label class="form-label">System_name</label>
+                <label class="form-label">System Name</label>
                 <input name="button_name"
                     class="form-control form-control-sm form-control-solid @error('system_name') is-invalid @enderror"
                     placeholder="Enter system_name" type="text" />
@@ -40,9 +40,9 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
-                <label class="form-label">Frontend ebsite Name</label>
+                <label class="form-label">Frontend Web site Name</label>
                 <input name="button_name"
                     class="form-control form-control-sm form-control-solid @error('frontend_website_name') is-invalid @enderror"
                     placeholder="Enter Frontend ebsite Name" type="text" />
@@ -51,7 +51,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Site Motto</label>
                 <input name="system_name"
@@ -62,7 +62,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Site Icon</label>
                 <input name="frontend_website_name"
@@ -73,7 +73,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">System Logo White</label>
                 <input name="site_motto"
@@ -84,7 +84,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">System Logo Black</label>
                 <input name="site_icon"
@@ -95,7 +95,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">System Timezone</label>
                 <input name="system_logo_white"
@@ -106,7 +106,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Base Color</label>
                 <input name="system_logo_black"
@@ -117,7 +117,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Base Hover Color</label>
                 <input name="system_timezone"
@@ -128,7 +128,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Secondary Base Color</label>
                 <input name="secondary_base_color"
@@ -139,7 +139,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Secondary Base Hover Color</label>
                 <input name="secondary_base_hover_color"
@@ -150,7 +150,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Phone One</label>
                 <input name="phone_one"
@@ -161,7 +161,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Phone Two</label>
                 <input name="phone_two"
@@ -172,7 +172,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Whatsapp Number</label>
                 <input name="whatsapp_number"
@@ -183,7 +183,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Default Language</label>
                 <input name="default_language"
@@ -195,7 +195,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Contact Email</label>
                 <input name="contact_email"
@@ -206,7 +206,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Support Email</label>
                 <input name="support_email"
@@ -217,7 +217,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Info Email</label>
                 <input name="info_email"
@@ -228,7 +228,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Sales Email</label>
                 <input name="sales_email"
@@ -239,7 +239,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Facebook URL</label>
                 <input name="facebook_url"
@@ -250,7 +250,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Twitter URL</label>
                 <input name="twitter_url"
@@ -261,7 +261,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Instagram URL</label>
                 <input name="instagram_url"
@@ -272,7 +272,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Linkedin URL</label>
                 <input name="linkedin_url"
@@ -283,7 +283,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Youtube URL</label>
                 <input name="youtube_url"
@@ -294,7 +294,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Github URL</label>
                 <input name="github_url"
@@ -305,7 +305,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Portfolio URL</label>
                 <input name="portfolio_url"
@@ -316,7 +316,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Fiver URL</label>
                 <input name="fiver_url"
@@ -327,7 +327,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Upwork url</label>
                 <input name="upwork_url"
@@ -338,7 +338,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Service Days</label>
                 <input name="service_days"
@@ -349,7 +349,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="fv-row mb-3">
                 <label class="form-label">Service Time</label>
                 <input name="service_time"
